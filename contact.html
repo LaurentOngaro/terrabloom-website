@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contacte Laurent pour toute question sur TerraBloom." />
+    <title>Contact - TerraBloom</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">🌱 TerraBloom</a>
+        <div style="display: flex; align-items: center;">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="game.html" class="nav-link">Le Jeu</a></li>
+            <li><a href="about.html" class="nav-link">À Propos</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+          <div class="nav-controls">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+              <span class="icon">☀️</span>
+            </button>
+            <button id="lang-toggle" class="icon-btn" aria-label="Switch Language">
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section class="page-content">
+      <div class="container">
+        <h1>Nous Contacter</h1>
+        <p class="intro-text">Des questions sur TerraBloom? Veux-tu signaler un bug ou proposer une fonctionnalité? Contacte-moi!</p>
+
+        <div class="contact-container">
+          <div class="contact-form-wrapper">
+            <h2>Envoie-moi un Message</h2>
+            <form action="https://formspree.io/f/XXXXXXXXX" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nom *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Sujet *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">-- Sélectionne un sujet --</option>
+                  <option value="question">Question Générale</option>
+                  <option value="bug">Signaler un Bug</option>
+                  <option value="feedback">Retour / Suggestion</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="press">Demande Presse / Press Kit</option>
+                  <option value="other">Autre</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+
+              <div class="form-group checkbox">
+                <label>
+                  <input type="checkbox" name="newsletter" value="yes" />
+                  📧 Inscris-moi à la newsletter TerraBloom
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">Envoyer le Message</button>
+            </form>
+
+            <p class="form-note">Les champs marqués d'un * sont obligatoires.</p>
+          </div>
+
+          <aside class="contact-info">
+            <h2>Autres Moyens</h2>
+
+            <div class="contact-card">
+              <h3>📧 Newsletter</h3>
+              <p>Inscris-toi pour les mises à jour mensuelles et les annonces exclusives.</p>
+              <form action="https://formspree.io/f/YYYYYYYYY" method="POST" class="newsletter-form">
+                <input type="email" name="email" placeholder="Ton email" required />
+                <button type="submit" class="btn btn-secondary">S'inscrire</button>
+              </form>
+            </div>
+
+            <div class="contact-card">
+              <h3>🌐 Réseaux Sociaux</h3>
+              <p>Suis-moi pour les mises à jour en temps réel:</p>
+              <div class="social-links-vertical">
+                <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">𝕏 X (Twitter)</a>
+                <a href="https://www.youtube.com/@Laurent_GameDev" target="_blank" rel="noopener">🎬 YouTube</a>
+                <a href="https://github.com/laurentOngaro" target="_blank" rel="noopener">💻 GitHub</a>
+                <a href="https://www.patreon.com/c/LaurentOngaro" target="_blank" rel="noopener">❤️ Patreon</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3>⏱️ Temps de Réponse</h3>
+              <p>Je réponds généralement aux messages dans les 48-72 heures.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <h4>TerraBloom</h4>
+          <p>Un jeu de construction, défense et restauration.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="/game.html">Le Jeu</a></li>
+            <li><a href="/about.html">À Propos</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TerraBloom. Tous droits réservés. | <a href="privacy.html">Confidentialité</a></p>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TerraBloom - Build, Defend, Restore. Un jeu d'action-défense cosy où tu restaures un monde mourant." />
+    <meta name="theme-color" content="#2E8B57" />
+    <title>TerraBloom - Build, Defend, Restore</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">🌱 TerraBloom</a>
+        <div style="display: flex; align-items: center;">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Accueil</a></li>
+            <li><a href="game.html" class="nav-link">Le Jeu</a></li>
+            <li><a href="about.html" class="nav-link">À Propos</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-controls">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+              <span class="icon">☀️</span>
+            </button>
+            <button id="lang-toggle" class="icon-btn" aria-label="Switch Language">
+              <span class="lang-text">EN</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>TerraBloom</h1>
+        <p class="tagline">Build, Defend, Restore</p>
+        <p class="subtitle">Un jeu d'action-défense cosy où tu restaures un monde mourant, zone par zone.</p>
+
+        <div class="cta-buttons">
+          <a href="#gameplay" class="btn btn-primary">Découvrir le Gameplay</a>
+          <a href="contact.html" class="btn btn-secondary">Rester Informé</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1766924007/TerraBloom_Key_Art-Build_Defend_Restore_3_phases.png.jpg"
+          alt="TerraBloom - Les 3 phases du gameplay"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="gameplay">
+      <div class="container">
+        <h2>Les 3 Phases du Gameplay</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🏗️</div>
+            <h3>Construire</h3>
+            <p>Assemblez des chunks de terrain pour créer des chemins uniques et placer vos défenses stratégiques.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>Défendre</h3>
+            <p>Combattez les vagues d'ennemis en FPS/TPS. Utilisez vos armes, compétences et tours pour protéger l'artefact de restauration.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h3>Restaurer</h3>
+            <p>Regardez les biomes se transformer de paysages corrompus en mondes vibrants et pleins de vie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Biomes Section -->
+    <section class="biomes">
+      <div class="container">
+        <h2>Les Biomes</h2>
+        <p class="section-subtitle">Quatre écosystèmes uniques à restaurer, chacun avec sa propre mécanique et esthétique.</p>
+        <img
+          src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1766924006/TerraBloom_Biomes_Corrupted_Restored_Transformations.png.jpg"
+          alt="Biomes - États corrompus vs restaurés"
+          class="biomes-image"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+      <div class="container">
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>🎮 Genre</h3>
+            <p>Action-Défense Cosy</p>
+          </div>
+          <div class="info-box">
+            <h3>🔧 Moteur</h3>
+            <p>Unity 6.x LTS</p>
+          </div>
+          <div class="info-box">
+            <h3>🖥️ Plateforme</h3>
+            <p>PC (Steam)</p>
+          </div>
+          <div class="info-box">
+            <h3>⏱️ Durée</h3>
+            <p>~40 heures (flexible)</p>
+          </div>
+          <div class="info-box">
+            <h3>📅 Lancement</h3>
+            <p>Décembre 2027</p>
+          </div>
+          <div class="info-box">
+            <h3>🎨 Style</h3>
+            <p>Low-Poly Kawaii Cosy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Sois parmi les premiers informés</h2>
+        <p>Inscris-toi à la newsletter pour suivre le développement et recevoir les dernières actualités.</p>
+        <div class="newsletter-form-wrapper">
+          <form action="https://formspree.io/f/xyzabc123" method="POST" class="newsletter-form">
+            <input type="email" name="email" placeholder="Ton email" required />
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-section">
+          <h4>TerraBloom</h4>
+          <p>Un jeu de construction, défense et restauration.</p>
+          <div class="social-links">
+            <a href="https://github.com/laurentOngaro" title="GitHub" target="_blank" rel="noopener">💻</a>
+            <a href="https://gitlab.com/laurentOngaro" title="GitLab" target="_blank" rel="noopener">🦊</a>
+            <a href="https://www.youtube.com/@Laurent_GameDev" title="YouTube" target="_blank" rel="noopener">🎬</a>
+            <a href="https://x.com/LaurentOngaro" title="X (Twitter)" target="_blank" rel="noopener">𝕏</a>
+            <a href="https://bsky.app/profile/laurentongaro.bsky.social" title="Bluesky" target="_blank" rel="noopener">🌌</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Liens Rapides</h4>
+          <ul>
+            <li><a href="game.html">Le Jeu</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Soutien</h4>
+          <ul>
+            <li><a href="https://www.patreon.com/c/LaurentOngaro" target="_blank" rel="noopener">Patreon</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TerraBloom. Tous droits réservés. | <a href="privacy.html">Confidentialité</a></p>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
