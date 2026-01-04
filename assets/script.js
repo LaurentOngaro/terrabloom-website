@@ -239,7 +239,11 @@ function initTheme() {
 function initLanguage() {
   const langToggle = document.getElementById('lang-toggle');
   const currentPath = window.location.pathname;
-  const isEnglish = currentPath.includes('_en.html');
+  const filename = currentPath.split('/').pop() || 'index.html';
+
+  // Determine if current page is English
+  // blog.html is considered English content
+  const isEnglish = currentPath.includes('_en.html') || filename === 'blog.html';
 
   if (langToggle) {
     // Set initial state
@@ -247,7 +251,14 @@ function initLanguage() {
 
     langToggle.addEventListener('click', (e) => {
       e.preventDefault();
-      const filename = currentPath.split('/').pop() || 'index.html';
+
+      // Special case: blog.html is unique (no FR/EN versions)
+      // If on blog.html, switch to index.html (FR)
+      if (filename === 'blog.html') {
+        window.location.href = 'index.html';
+        return;
+      }
+
       let newFilename;
 
       if (isEnglish) {
