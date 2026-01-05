@@ -270,6 +270,9 @@ nav a.active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  --phase-drop-stagger: 0.18s;
+  --phase-drop-duration: 1s;
+  --phase-drop-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .phase {
@@ -289,12 +292,41 @@ nav a.active {
   width: 100%;
   height: 250px;
   overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-64px) scale(0.92) rotate(-2deg);
+  transform-origin: center top;
 }
 
 .phase-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: var(--transition);
+  transform-origin: center;
+}
+
+.phase:hover .phase-image img {
+  animation: phase-img-warp 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-fill-mode: forwards;
+  transform: scale(1.03);
+}
+
+.phases-loaded .phase-image {
+  animation: gallery-drop-in var(--phase-drop-duration) var(--phase-drop-ease) forwards;
+  animation-delay: calc(var(--drop-index, 0) * var(--phase-drop-stagger));
+}
+
+.phases-loaded .phase:nth-child(1) .phase-image {
+  --drop-index: 0;
+}
+
+.phases-loaded .phase:nth-child(2) .phase-image {
+  --drop-index: 1;
+}
+
+.phases-loaded .phase:nth-child(3) .phase-image {
+  --drop-index: 2;
 }
 
 .phase-content {
@@ -320,6 +352,9 @@ nav a.active {
 .gallery {
   padding: 4rem 2rem;
   background-color: var(--color-bg-secondary);
+  --drop-stagger: 0.22s;
+  --drop-duration: 1s;
+  --drop-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .gallery-container {
@@ -359,6 +394,8 @@ nav a.active {
   aspect-ratio: 1;
   cursor: pointer;
   box-shadow: var(--shadow-md);
+  opacity: 1;
+  transform: none;
 }
 
 .gallery-item img {
@@ -366,10 +403,54 @@ nav a.active {
   height: 100%;
   object-fit: cover;
   transition: var(--transition);
+  transform-origin: center;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.05);
+  animation: phase-img-warp 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes phase-img-warp {
+  0% {
+    transform: perspective(900px) rotateX(-8deg) rotateY(10deg) scale(1.05) translate3d(-6px, -4px, 0);
+    filter: saturate(1.1) contrast(1.05);
+  }
+  55% {
+    transform: perspective(900px) rotateX(4deg) rotateY(-6deg) scale(1.02) translate3d(4px, 6px, 0);
+    filter: saturate(1.08) contrast(1.03);
+  }
+  75% {
+    transform: perspective(900px) rotateX(-2deg) rotateY(3deg) scale(1.015) translate3d(-2px, 2px, 0);
+    filter: saturate(1.05) contrast(1.02);
+  }
+  100% {
+    transform: perspective(900px) rotateX(-1deg) rotateY(2deg) scale(1.02) translate3d(0, 0, 0);
+    filter: saturate(1.05) contrast(1.02);
+  }
+}
+
+@keyframes gallery-drop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-72px) scale(0.9) rotate(-3deg);
+    filter: blur(3px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(12px) scale(1.05) rotate(0.6deg);
+    filter: blur(0);
+  }
+  82% {
+    opacity: 1;
+    transform: translateY(-6px) scale(0.99) rotate(-0.2deg);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    filter: blur(0);
+  }
 }
 
 .gallery-item-overlay {

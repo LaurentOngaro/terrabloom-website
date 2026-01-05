@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initLanguage();
   initNavigation();
   initFormspree();
+  initGalleryAnimation();
 });
 
 /* ============================================
@@ -215,6 +216,28 @@ function initFormspree() {
         });
     });
   }
+}
+
+/* ============================================
+   GALLERY DROP-IN ANIMATION
+   ============================================ */
+
+function initGalleryAnimation() {
+  const galleryGrids = document.querySelectorAll('.gallery-grid');
+  const phaseGrids = document.querySelectorAll('.phases-grid');
+
+  if (!galleryGrids.length && !phaseGrids.length) {
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    galleryGrids.forEach((grid) => {
+      grid.classList.add('gallery-loaded');
+    });
+    phaseGrids.forEach((grid) => {
+      grid.classList.add('phases-loaded');
+    });
+  });
 }
 
 /* ============================================
