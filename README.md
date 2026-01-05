@@ -6,7 +6,7 @@ Site officiel du jeu indie TerraBloom - Build. Defend. Restore.
 
 ```
 
-docs/
+/
 ├── index.html              \# Accueil (FR)
 ├── index-en.html           \# Accueil (EN)
 ├── about.html              \# À propos (FR)
@@ -35,63 +35,7 @@ docs/
 ✅ **Formspree Integration** - Formulaire de contact GDPR-compliant
 ✅ **Clean Design** - Inspiré par GOG, épuré et professionnel
 
-## 🚀 Installation & Déploiement
-
-### Localement
-
-```bash
-# Ouvre simplement dans un navigateur
-# Accès direct aux fichiers HTML
-```
-
-### GitHub Pages
-
-1. **Push vers GitHub** (branche main ou master)
-2. **Settings** → Pages → Source: `/docs`
-3. **DNS** (OVH ou autre registrar):
-   - `CNAME` : terrabloom.dev → username.github.io
-   - Ou `A` records pour IP GitHub
-
-## 🔧 Configuration
-
-### Formspree (Contact Form)
-
-1. Va sur [formspree.io](https://formspree.io)
-2. Crée un nouveau formulaire
-3. Copie l'ID (ex: `abc123def456`)
-4. Remplace dans `contact.html` et `contact-en.html`:
-
-```html
-<form action="https://formspree.io/f/YOUR_ID_HERE" method="POST"></form>
-```
-
-### DevLog Posts
-
-Ajoute des posts dans `data/devlog.json`:
-
-````json
-{
-  "posts": [
-    {
-      "id": "004",
-      "date": "2026-01-05",
-      "title_fr": "Titre français",
-      "title_en": "English title",
-      "excerpt_fr": "Résumé français...",
-      "excerpt_en": "English summary...",
-      ```
-      "content_fr": "<p>Contenu HTML français...</p>",
-      ```
-      ```
-      "content_en": "<p>English HTML content...</p>",
-      ```
-      "category": "development"
-    }
-  ]
-}
-````
-
-## 🎨 Couleurs \& Brand
+## 🎨 Couleurs & Brand
 
 ```css
 Primary:   #2E8B57 (Verdant Green)
@@ -124,32 +68,6 @@ Les images utilisent actuellement des URLs S3 externes :
 
 **Pour héberger localement :**
 
-1. Télécharge les images
-2. Mets-les dans `docs/images/`
-3. Remplace les URLs par des chemins relatifs (ex: `./images/hero.jpg`)
-
-## 🐛 Debugging
-
-**Console logs:**
-
-```javascript
-console.log('Current lang:', localStorage.getItem('lang'));
-console.log('Current theme:', localStorage.getItem('theme'));
-```
-
-**DevLog pas chargé?**
-
-- Vérifie que `devlog.json` est au bon chemin: `./data/devlog.json`
-- Ouvre la console (F12) et cherche les erreurs CORS
-
-## 🎯 Prochaines Étapes
-
-1. ✅ Tous les fichiers créés
-2. ⏳ Configurer Formspree (ID contact)
-3. ⏳ Commit \& Push GitHub
-4. ⏳ Configurer DNS (terrabloom.dev)
-5. ⏳ Lancer GitHub Pages
-
 ## 📞 Support
 
 Questions? Contact Laurent:
@@ -157,9 +75,3 @@ Questions? Contact Laurent:
 - Twitter/X: [@LaurentOngaro](https://x.com/LaurentOngaro)
 - GitHub: [LaurentOngaro](https://github.com/LaurentOngaro)
 - Patreon: [TerraBloom](https://patreon.com)
-
----
-
-**Last Updated:** 2026-01-05
-**Version:** 1.0.0
-**Status:** ✅ Prêt pour déploiement

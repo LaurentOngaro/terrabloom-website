@@ -524,6 +524,15 @@ nav a.active {
   line-height: 1.8;
 }
 
+.about-container img {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+
 /* ============================================
    BLOG SECTION
    ============================================ */
