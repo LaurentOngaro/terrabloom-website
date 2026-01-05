@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initNavigation();
   initFormspree();
   initGalleryAnimation();
+  initGoogleAnalytics();
 });
 
 /* ============================================
@@ -249,4 +250,24 @@ function scrollToElement(selector) {
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
+}
+
+/* ============================================
+   GOOGLE ANALYTICS
+   ============================================ */
+
+function initGoogleAnalytics() {
+  // Initialize data layer
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-8LMY4GLCC9');
+
+  // Load Google Analytics script
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-8LMY4GLCC9';
+  document.head.appendChild(script);
 }
