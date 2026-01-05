@@ -1,152 +1,165 @@
-# 🌿 TerraBloom - Official Website
+# TerraBloom Website
 
-Static website for the TerraBloom game project, hosted on GitHub Pages with custom domains from OVH.
+Site officiel du jeu indie TerraBloom - Build. Defend. Restore.
 
 ## 📋 Structure
 
 ```
+
 docs/
-├── index.html              # Homepage
-├── game.html               # Game details & mechanics
-├── about.html              # Developer bio & social links
-├── contact.html            # Contact form & newsletter
-├── privacy.html            # GDPR privacy policy
-├── assets/
-│   ├── style.css           # Main stylesheet
-│   ├── script.js           # Interactive features
-│   └── favicon.png         # Site icon
-├── CNAME                   # Custom domain config (playterrabloom.com)
-└── DEPLOYMENT_GUIDE.md     # GitHub Pages setup instructions
+├── index.html              \# Accueil (FR)
+├── index-en.html           \# Accueil (EN)
+├── about.html              \# À propos (FR)
+├── about-en.html           \# À propos (EN)
+├── blog.html               \# DevLog (FR)
+├── blog-en.html            \# DevLog (EN)
+├── contact.html            \# Contact (FR)
+├── contact-en.html         \# Contact (EN)
+├── css/
+│   └── style.css           \# Styles (Dark/Light theme)
+├── js/
+│   ├── main.js             \# Navigation + Theme + Language
+│   └── blog-loader.js      \# Charge les posts depuis devlog.json
+├── data/
+│   └── devlog.json         \# Posts du DevLog
+└── README.md               \# Documentation
+
 ```
 
-## 🚀 Quick Start
+## 🎨 Fonctionnalités
 
-### For Local Development
+✅ **Dark/Light Mode Toggle** - Persistant via localStorage
+✅ **Français/Anglais** - Support multilingue complet
+✅ **DevLog Auto-Load** - Posts chargés depuis JSON
+✅ **Responsive Design** - Mobile-first, compatible tous écrans
+✅ **Formspree Integration** - Formulaire de contact GDPR-compliant
+✅ **Clean Design** - Inspiré par GOG, épuré et professionnel
 
-1. **Open in VS Code or any HTML editor**
-2. **Use Live Server** (VS Code extension) to preview
-3. **Edit HTML files** as needed
-4. **Styles** are in `assets/style.css`
-5. **Interactivity** is in `assets/script.js`
+## 🚀 Installation & Déploiement
 
-### Deploy to GitHub Pages
+### Localement
 
-See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete instructions.
+```bash
+# Ouvre simplement dans un navigateur
+# Accès direct aux fichiers HTML
+```
 
-Quick summary:
-1. Push this folder to a GitHub repository
-2. Enable GitHub Pages with source `/docs`
-3. Configure DNS at OVH
-4. Add Formspree form IDs
+### GitHub Pages
 
-## 🎨 Branding
+1. **Push vers GitHub** (branche main ou master)
+2. **Settings** → Pages → Source: `/docs`
+3. **DNS** (OVH ou autre registrar):
+   - `CNAME` : terrabloom.dev → username.github.io
+   - Ou `A` records pour IP GitHub
 
-- **Primary Color**: `#2E8B57` (Verdant Green)
-- **Secondary Color**: `#8D6E63` (Earth Brown)
-- **Accent Color**: `#FFD700` (Sunrise Gold)
-- **Font**: Inter (from Google Fonts)
+## 🔧 Configuration
 
-## 📧 Contact Forms
+### Formspree (Contact Form)
 
-Forms are powered by **Formspree.io** (free, GDPR-compliant):
+1. Va sur [formspree.io](https://formspree.io)
+2. Crée un nouveau formulaire
+3. Copie l'ID (ex: `abc123def456`)
+4. Remplace dans `contact.html` et `contact-en.html`:
 
-- Contact form requires: Formspree ID in `contact.html`
-- Newsletter forms require: Formspree ID in `index.html` and `contact.html`
+```html
+<form action="https://formspree.io/f/YOUR_ID_HERE" method="POST"></form>
+```
 
-Get your IDs at: https://formspree.io
+### DevLog Posts
 
-## 🖼️ Images
+Ajoute des posts dans `data/devlog.json`:
 
-Images are hosted on **Cloudinary** (`res.cloudinary.com/dhcyqj41d/`):
+````json
+{
+  "posts": [
+    {
+      "id": "004",
+      "date": "2026-01-05",
+      "title_fr": "Titre français",
+      "title_en": "English title",
+      "excerpt_fr": "Résumé français...",
+      "excerpt_en": "English summary...",
+      ```
+      "content_fr": "<p>Contenu HTML français...</p>",
+      ```
+      ```
+      "content_en": "<p>English HTML content...</p>",
+      ```
+      "category": "development"
+    }
+  ]
+}
+````
 
-- Hero image: `TerraBloom_Key_Art-Build_Defend_Restore_3_phases`
-- Biomes image: `TerraBloom_Biomes_Corrupted_Restored_Transformations`
+## 🎨 Couleurs \& Brand
 
-## 🔗 Social Links
+```css
+Primary:   #2E8B57 (Verdant Green)
+Secondary: #8D6E63 (Earth Brown)
+Accent:    #FFD700 (Sunrise Gold)
+```
 
-- Patreon
-- GitHub
-- GitLab
-- YouTube
-- X (Twitter)
-- Bluesky
+## 📱 Responsive Breakpoints
 
-All links are configured in `about.html` and footer sections.
+- `768px` : Tablette
+- `480px` : Mobile
 
-## 📱 Responsive Design
+## 🌍 Langue \& Thème
 
-- Desktop (1024px+)
-- Tablet (768px - 1023px)
-- Mobile (480px - 767px)
-- Ultra-mobile (< 480px)
+- **Langue** : Stockée dans `localStorage.lang`
+  - Défaut: `fr`
+  - Options: `fr` ou `en`
+- **Thème** : Stocké dans `localStorage.theme`
+  - Défaut: `light`
+  - Options: `light` ou `dark`
 
-## ⚙️ Features
+## 📸 Images
 
-- ✅ Fast static HTML (no server required)
-- ✅ GDPR-compliant privacy policy
-- ✅ Form validation with client-side checks
-- ✅ Smooth navigation and scroll behavior
-- ✅ Mobile-friendly responsive design
-- ✅ Optimized for search engines (SEO)
-- ✅ Automatic SSL/HTTPS via GitHub Pages
-- ✅ Custom domain support (playterrabloom.com)
+Les images utilisent actuellement des URLs S3 externes :
 
-## 🔐 Security
+- Hero (minecraft-globe): `f62cb24b-966f-4c2d-9ee5-0b93b105bb0a`
+- Phases (build-defend-restore): `f094d0aa-5f31-4a68-9f20-7238942b1c71`
+- Biomes (4-biomes): `1a4da2d3-b0a8-47fe-8e10-2255d1bc78bf`
+- Artifact: `5d57bf62-10c5-45af-9d36-c8bbce879c8e`
 
-- HTTPS enabled by default on GitHub Pages
-- No third-party JavaScript dependencies (vanilla JS)
-- Form submissions handled by Formspree (secure)
-- Privacy policy compliant with GDPR/RGPD
+**Pour héberger localement :**
 
-## 📊 Analytics (Optional)
+1. Télécharge les images
+2. Mets-les dans `docs/images/`
+3. Remplace les URLs par des chemins relatifs (ex: `./images/hero.jpg`)
 
-Add Google Analytics by updating the `<head>` section with your `MEASUREMENT_ID`.
+## 🐛 Debugging
 
-See DEPLOYMENT_GUIDE.md for details.
+**Console logs:**
 
-## 🛠️ Development
+```javascript
+console.log('Current lang:', localStorage.getItem('lang'));
+console.log('Current theme:', localStorage.getItem('theme'));
+```
 
-### Edit HTML
+**DevLog pas chargé?**
 
-Files are standard HTML5 - use any text editor.
+- Vérifie que `devlog.json` est au bon chemin: `./data/devlog.json`
+- Ouvre la console (F12) et cherche les erreurs CORS
 
-### Edit Styles
+## 🎯 Prochaines Étapes
 
-Modify `assets/style.css` - uses CSS custom properties (variables) for easy customization.
-
-### Edit Interactivity
-
-Update `assets/script.js` - pure JavaScript, no dependencies.
-
-### Update Images
-
-Replace Cloudinary URLs in HTML files with your own images, or use the existing ones.
-
-## 📝 Content Sync (Future)
-
-A Python script in `_Helpers/03_Maintenance/generateWebsite.py` could automate content sync from the Obsidian vault to this website.
-
-## 🔄 Workflow
-
-1. Edit HTML/CSS/JS locally
-2. Test with Live Server
-3. Commit to GitHub
-4. Push to main branch
-5. GitHub Pages auto-deploys
+1. ✅ Tous les fichiers créés
+2. ⏳ Configurer Formspree (ID contact)
+3. ⏳ Commit \& Push GitHub
+4. ⏳ Configurer DNS (terrabloom.dev)
+5. ⏳ Lancer GitHub Pages
 
 ## 📞 Support
 
-- **GitHub Issues**: Report bugs or request features
-- **Formspree Support**: Contact form issues
-- **OVH Support**: Domain/DNS issues
+Questions? Contact Laurent:
 
-## 📄 License
-
-© 2025 TerraBloom Project. All rights reserved.
+- Twitter/X: [@LaurentOngaro](https://x.com/LaurentOngaro)
+- GitHub: [LaurentOngaro](https://github.com/LaurentOngaro)
+- Patreon: [TerraBloom](https://patreon.com)
 
 ---
 
-**Website Version**: 1.0.0
-**Last Updated**: 2 January 2026
-**Hosted on**: GitHub Pages
-**Domain**: playterrabloom.com
+**Last Updated:** 2026-01-05
+**Version:** 1.0.0
+**Status:** ✅ Prêt pour déploiement

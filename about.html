@@ -1,206 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A Propos de Laurent Ongaro - Développeur de jeux indépendant et créateur de TerraBloom." />
-    <title>A Propos - TerraBloom</title>
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="logo">🌱 TerraBloom</a>
-        <div style="display: flex; align-items: center;">
-          <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Accueil</a></li>
-            <li><a href="game.html" class="nav-link">Le Jeu</a></li>
-            <li><a href="about.html" class="nav-link active">A Propos</a></li>
-            <li><a href="blog.html" class="nav-link">Blog</a></li>
-            <li><a href="contact.html" class="nav-link">Contact</a></li>
-          </ul>
-          <div class="nav-controls">
-            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
-              <span class="icon">☀️</span>
-            </button>
-            <button id="lang-toggle" class="icon-btn" aria-label="Switch Language">
-              <span class="lang-text">EN</span>
-            </button>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="À propos de TerraBloom - Un jeu indie en développement par Laurent Ongaro">
+  <title>À propos - TerraBloom</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">TerraBloom</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="active">À propos</a>
+        <a href="blog.html">DevLog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" class="toggle-btn" aria-label="Toggle theme" title="Changer le thème">🌙</button>
+        <button id="lang-toggle" class="toggle-btn" aria-label="Toggle language" title="Switch to English">EN</button>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="about-hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-text">
-            <h1>Laurent Ongaro</h1>
-            <p class="hero-subtitle">Développeur Indépendant. Architecte de Systèmes. Créateur de Mondes.</p>
-            <p>Je ne suis pas une entreprise. Je suis juste un gars qui aime construire des choses complexes et les rendre simples pour les joueurs.</p>
-          </div>
-          <div class="hero-side">
-            <div class="accent-box">
-              <p><strong>Statut :</strong> Solo Dev</p>
-              <p><strong>Focus :</strong> TerraBloom</p>
-              <p><strong>Moteur :</strong> Unity 6 LTS</p>
-              <p><strong>Localisation :</strong> France</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <main>
+    <section class="about">
+      <div class="about-container">
+        <h1>À propos de TerraBloom</h1>
 
-    <!-- Page Content -->
-    <section class="page-content">
-      <div class="container">
+        <h2>Le Concept</h2>
+        <p>
+          TerraBloom est un jeu indie d'exploration et de défense en 3D développé en solo.
+          Le jeu combine des mécaniques de construction, de défense et de restauration dans un univers procéduralement généré.
+        </p>
 
-        <!-- La Vision Section -->
-        <div class="about-section">
-          <h2>La Philosophie</h2>
-          <div class="vision-grid">
-            <div class="vision-text">
-              <p>
-                Je crois que les jeux de survie ont perdu quelque chose en route. Ils sont devenus stressants, exigeants, punitifs.
-              </p>
-              <p>
-                Avec <strong>TerraBloom</strong>, je veux revenir à l'essentiel : la satisfaction de construire quelque chose qui dure.
-              </p>
-              <ul class="vision-list">
-                <li><strong>Pas de Crunch :</strong> Le jeu est développé à un rythme humain, pour des humains.</li>
-                <li><strong>Pas de FOMO :</strong> Tu joues quand tu veux. Le monde t'attend.</li>
-                <li><strong>Qualité > Quantité :</strong> Je préfère trois mécaniques polies à la perfection qu'une centaine de features buggées.</li>
-              </ul>
-            </div>
-            <div class="vision-visual">
-              <div class="quote-box">
-                <blockquote>
-                  "Un jeu doit être un refuge, pas une seconde liste de tâches."
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h2>Le Gameplay</h2>
+        <p>
+          Le joueur explore un monde divisé en chunks thématiques. Chaque chunk représente un biome distinct,
+          allant du glacier gelé aux terres désertiques, en passant par des zones corrompues et des forêts luxuriantes.
+        </p>
+        <p>
+          Le cycle de jeu se divise en trois phases :
+        </p>
+        <ul>
+          <li><strong>Build :</strong> Construisez des structures pour progresser et restaurer</li>
+          <li><strong>Defend :</strong> Combattez les créatures corrompues et protégez votre progression</li>
+          <li><strong>Restore :</strong> Ramenez la nature à la vie et transformez les terres</li>
+        </ul>
 
-        <!-- Qui Je Suis Section -->
-        <div class="about-section">
-          <h2>Ma Boîte à Outils</h2>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <div class="skill-header">
-                <span class="skill-icon">🏗️</span>
-                <h3>Architecture</h3>
-              </div>
-              <p>J'aime quand le code est propre. ScriptableObjects, Event Channels, découplage... Si l'architecture est saine, le jeu est sain.</p>
-            </div>
+        <h2>L'Univers</h2>
+        <p>
+          TerraBloom se déroule dans un univers où la nature a été corrompue par une force obscure.
+          En tant que restaurateur, votre mission est de parcourir ce monde et de rendre la vie aux terres
+          dévastées. Chaque biome possède ses propres défis, ses créatures et ses opportunités de restauration.
+        </p>
 
-            <div class="skill-card">
-              <div class="skill-header">
-                <span class="skill-icon">⚡</span>
-                <h3>Performance</h3>
-              </div>
-              <p>Un jeu qui rame, c'est non. Je passe autant de temps dans le Profiler que dans l'éditeur. L'optimisation n'est pas une option.</p>
-            </div>
+        <h2>Le Développement</h2>
+        <p>
+          TerraBloom est en développement depuis décembre 2025 et devrait être lancé entre 2027 et 2028.
+          Le projet suit un roadmap clair avec plusieurs phases de développement :
+        </p>
+        <ul>
+          <li><strong>Phase 1 (2026) :</strong> Prototype de base, mécaniques fondamentales</li>
+          <li><strong>Phase 2 (2026-2027) :</strong> Contenu de jeu, biomes, gameplay FPS/TD</li>
+          <li><strong>Phase 3 (2027-2028) :</strong> Polish, optimisation et lancement</li>
+        </ul>
 
-            <div class="skill-card">
-              <div class="skill-header">
-                <span class="skill-icon">🎨</span>
-                <h3>Tech Art</h3>
-              </div>
-              <p>Shaders, VFX, Lighting. Je ne suis pas un artiste traditionnel, mais je sais faire chanter les pixels avec du code.</p>
-            </div>
+        <h2>Plateforme Cible</h2>
+        <p>
+          TerraBloom est conçu pour fonctionner sur une large gamme de matériel,
+          des PC mid-range aux consoles dernière génération. L'accent est mis sur les performances et l'optimisation.
+        </p>
 
-            <div class="skill-card">
-              <div class="skill-header">
-                <span class="skill-icon">🔧</span>
-                <h3>DevOps</h3>
-              </div>
-              <p>Automatisation, CI/CD, Versioning. Parce que perdre du temps sur des tâches répétitives, c'est du temps en moins pour le jeu.</p>
-            </div>
-          </div>
-        </div>
+        <h2>L'Équipe</h2>
+        <p>
+          TerraBloom est développé initialement en solo par <strong>Laurent Ongaro</strong>,
+          Ingénieur logiciel ayant plus de 30 ans d'expérience en programmation ayant un intérêt marqué pour les technologies émergentes et la création de jeux vidéo,
+          le projet sera développé avec expertise et rigueur professionnelle acquises au fil des années dans une grande diversité d'environnements techniques.
+        </p>
 
-        <!-- Journey Section -->
-        <div class="about-section timeline-section">
-          <h2>Le Journal de Bord</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-marker">🌱</div>
-              <div class="timeline-content">
-                <h4>La Graine (Nov 2025)</h4>
-                <p>L'idée initiale. Un mélange de Tower Defense et de Farming Sim. J'ai écrit le GDD en une nuit blanche.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-marker">🧱</div>
-              <div class="timeline-content">
-                <h4>Les Fondations (Déc 2025)</h4>
-                <p>Mise en place du projet Unity. Création des outils de documentation. Définition de l'architecture technique.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-marker">🚀</div>
-              <div class="timeline-content">
-                <h4>Le Chantier (2026-2027)</h4>
-                <p>Développement actif. Création des biomes, des systèmes de défense, de l'IA. C'est là que la magie opère.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Call to Action Section -->
-        <div class="about-section cta-about">
-          <h2>Rejoins l'Aventure</h2>
-          <p>Je partage tout : les réussites, les échecs, le code. Pas de filtre marketing.</p>
-          <div class="social-grid">
-            <a href="https://patreon.com/LaurentOngaro" class="social-card" target="_blank" rel="noopener">
-              <div class="social-icon">❤️</div>
-              <h4>Patreon</h4>
-              <p>Soutiens le projet</p>
-            </a>
-            <a href="https://github.com/laurentOngaro" class="social-card" target="_blank" rel="noopener">
-              <div class="social-icon">💻</div>
-              <h4>GitHub</h4>
-              <p>Le Code</p>
-            </a>
-            <a href="https://www.youtube.com/@Laurent_GameDev" class="social-card" target="_blank" rel="noopener">
-              <div class="social-icon">🎬</div>
-              <h4>YouTube</h4>
-              <p>Devlogs</p>
-            </a>
-            <a href="https://x.com/LaurentOngaro" class="social-card" target="_blank" rel="noopener">
-              <div class="social-icon">𝕏</div>
-              <h4>Twitter/X</h4>
-              <p>News</p>
-            </a>
-          </div>
-        </div>
+        <h2>Suivez le Développement</h2>
+        <p>
+          Restez à l'écoute pour les mises à jour régulières via notre <a href="blog.html">DevLog</a>.
+          Vous pouvez également nous suivre sur <a href="https://x.com/LaurentOngaro" target="_blank">Twitter/X</a>,
+          <a href="https://github.com/LaurentOngaro" target="_blank">GitHub</a> ou
+          <a href="https://patreon.com" target="_blank">Patreon</a>.
+        </p>
       </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-section">
-          <h4>TerraBloom</h4>
-          <p>Un jeu de construction, défense et restauration.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Liens Rapides</h4>
-          <ul>
-            <li><a href="game.html">Le Jeu</a></li>
-            <li><a href="about.html">A Propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <a href="about.html">Le Jeu</a>
+        <a href="about.html">Le Développement</a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 TerraBloom. Tous droits réservés. | <a href="privacy.html">Confidentialité</a></p>
+      <div class="footer-section">
+        <h3>Communauté</h3>
+        <a href="https://x.com/LaurentOngaro" target="_blank">Twitter/X</a>
+        <a href="https://github.com/LaurentOngaro" target="_blank">GitHub</a>
+        <a href="https://patreon.com" target="_blank">Patreon</a>
       </div>
-    </footer>
+      <div class="footer-section">
+        <h3>Ressources</h3>
+        <a href="blog.html">DevLog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a></p>
+    </div>
+  </footer>
 
-    <script src="assets/script.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
 </html>
+

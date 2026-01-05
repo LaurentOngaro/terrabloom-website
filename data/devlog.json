@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": "001",
+      "date": "2026-01-04",
+      "title_fr": "Nouveau site lancé! 🎉",
+      "title_en": "New website launched! 🎉",
+      "excerpt_fr": "Le nouveau site officiel de TerraBloom est en ligne. Design épuré, responsive et prêt pour vous accueillir.",
+      "excerpt_en": "The new official TerraBloom website is live. Clean design, responsive and ready to welcome you.",
+      "content_fr": "<p>Nous sommes heureux de vous présenter le nouveau site de TerraBloom! Ce site a été conçu avec soin pour mettre en avant la beauté et l'essence du jeu.</p><p><strong>Fonctionnalités:</strong></p><ul><li>Design épuré et professionnel</li><li>Thème sombre/clair</li><li>Support du français et anglais</li><li>Gallery interactive</li><li>DevLog en temps réel</li></ul><p>Merci de votre soutien!</p>",
+      "content_en": "<p>We're excited to present the new TerraBloom website! This site has been carefully designed to showcase the beauty and essence of the game.</p><p><strong>Features:</strong></p><ul><li>Clean and professional design</li><li>Dark/Light theme</li><li>French and English support</li><li>Interactive gallery</li><li>Real-time DevLog</li></ul><p>Thank you for your support!</p>",
+      "category": "announcement"
+    },
+    {
+      "id": "002",
+      "date": "2025-12-15",
+      "title_fr": "Progression de développement - Décembre",
+      "title_en": "Development Progress - December",
+      "excerpt_fr": "Décembre a été une période productive. Nous avons progressé sur le système de chunks et la génération procédurale.",
+      "excerpt_en": "December has been a productive period. We've made progress on the chunk system and procedural generation.",
+      "content_fr": "<p>Ce mois-ci, nous avons focalisé nos efforts sur:</p><ul><li>✅ Optimisation du système de chunks</li><li>✅ Tests de génération procédurale</li><li>✅ Implémentation des biomes de base</li><li>🔄 Travail en cours: AI des ennemis</li></ul><p>Les performances sont excellentes sur les appareils mid-range. Prochain objectif: intégration du gameplay FPS.</p>",
+      "content_en": "<p>This month, we focused on:</p><ul><li>✅ Chunk system optimization</li><li>✅ Procedural generation testing</li><li>✅ Basic biome implementation</li><li>🔄 In progress: Enemy AI</li></ul><p>Performance is excellent on mid-range devices. Next goal: FPS gameplay integration.</p>",
+      "category": "development"
+    },
+    {
+      "id": "003",
+      "date": "2025-11-20",
+      "title_fr": "First Look - Architecture Chunk-Based",
+      "title_en": "First Look - Chunk-Based Architecture",
+      "excerpt_fr": "Présentation de notre approche architecture chunk-based pour TerraBloom.",
+      "excerpt_en": "Presentation of our chunk-based architecture approach for TerraBloom.",
+      "content_fr": "<p>TerraBloom utilise une architecture basée sur les chunks pour permettre des mondes vastes et procéduralement générés.</p><p><strong>Avantages:</strong></p><ul><li>Mondes énormes sans limites artificielles</li><li>Génération procédurale fluide</li><li>Performance optimisée</li><li>Sauvegarde progressive</li></ul><p>Chaque chunk contient un biome distinct avec ses propres mécaniques et visuels.</p>",
+      "content_en": "<p>TerraBloom uses a chunk-based architecture to enable vast, procedurally generated worlds.</p><p><strong>Benefits:</strong></p><ul><li>Huge worlds without artificial limits</li><li>Smooth procedural generation</li><li>Optimized performance</li><li>Progressive saving</li></ul><p>Each chunk contains a distinct biome with its own mechanics and visuals.</p>",
+      "category": "development"
+    }
+  ]
+}
