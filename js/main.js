@@ -208,18 +208,11 @@ function initFormspree() {
 
       const formData = new FormData(form);
 
-      // Convert FormData to JSON object for Formspree
-      const data = {};
-      formData.forEach((value, key) => {
-        data[key] = value;
-      });
-
       fetch(form.getAttribute('action'), {
         method: 'POST',
-        body: JSON.stringify(data),
+        body: formData,
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
+          'Accept': 'application/json'
         },
       })
         .then((response) => {
