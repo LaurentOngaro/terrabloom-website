@@ -189,10 +189,11 @@ function initFormspree() {
   const form = document.querySelector('form[action^="https://formspree.io"]');
 
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
 
       const submitBtn = form.querySelector('button[type="submit"]');
+      const errorDiv = form.querySelector('#form-error');
       const originalText = submitBtn.textContent;
       const lang = getCurrentLanguage();
 
@@ -200,43 +201,77 @@ function initFormspree() {
       const messages = {
         sending: lang === 'en' ? 'Sending...' : 'Envoi...',
         sent: lang === 'en' ? '✅ Sent!' : '✅ Envoyé !',
-        error: lang === 'en' ? '❌ Error' : '❌ Erreur'
+        error: lang === 'en' ? '❌ Error' : '❌ Erreur',
+        validation_error: lang === 'en' ? 'Please fix the following errors:' : 'Veuillez corriger les erreurs suivantes :'
       };
+
+      // Clear previous error messages
+      if (errorDiv) {
+        errorDiv.style.display = 'none';
+        errorDiv.innerHTML = '';
+      }
 
       submitBtn.disabled = true;
       submitBtn.textContent = messages.sending;
 
-      const formData = new FormData(form);
-
-      fetch(form.getAttribute('action'), {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        },
-      })
-        .then((response) => {
-          if (response.ok) {
-            form.reset();
-            submitBtn.textContent = messages.sent;
-            setTimeout(() => {
-              submitBtn.disabled = false;
-              submitBtn.textContent = originalText;
-            }, 3000);
-          } else {
-            return response.json().then(data => {
-              throw new Error(data.error || 'Form submission failed');
-            });
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
           }
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-          submitBtn.textContent = messages.error;
+        });
+
+        if (response.ok) {
+          form.reset();
+          submitBtn.textContent = messages.sent;
           setTimeout(() => {
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
           }, 3000);
-        });
+        } else {
+          const data = await response.json();
+          console.error('Formspree response:', data);
+
+          // Display detailed validation errors
+          let errorMessage = data.error || `Server returned ${response.status}`;
+          let errorHTML = `<strong>${messages.validation_error}</strong><ul>`;
+
+          if (data.errors && Array.isArray(data.errors)) {
+            data.errors.forEach(err => {
+              errorHTML += `<li><strong>${err.field}:</strong> ${err.message}</li>`;
+            });
+            errorHTML += '</ul>';
+            console.error('Validation errors:', data.errors);
+          } else {
+            errorHTML = `<strong>${errorMessage}</strong>`;
+          }
+
+          // Display error to user
+          if (errorDiv) {
+            errorDiv.innerHTML = errorHTML;
+            errorDiv.style.display = 'block';
+          }
+
+          submitBtn.textContent = messages.error;
+        }
+      } catch (error) {
+        console.error('Form submission error:', error.message);
+
+        // Display error to user
+        if (errorDiv) {
+          errorDiv.innerHTML = `<strong>${error.message}</strong>`;
+          errorDiv.style.display = 'block';
+        }
+
+        submitBtn.textContent = messages.error;
+      } finally {
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        }, 3000);
+      }
     });
   }
 }
