@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About TerraBloom - An indie game in development by Laurent Ongaro" />
+    <meta name="description" content="About TerraBloom - Discover the unique concept of this indie 3D game and the story behind its developer, Laurent Ongaro." />
+    <meta name="keywords" content="TerraBloom, indie game, developer, Laurent Ongaro, game design, chunk system" />
+    <meta property="og:title" content="About - TerraBloom" />
+    <meta property="og:description" content="Discover TerraBloom's unique concept and the development story by Laurent Ongaro." />
+    <meta property="og:image" content="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767523872/TerraBloom_Key_Art-Build_Defend_Restore_3_phases%20V2.png.jpg" />
+    <meta property="og:url" content="https://terrabloom.dev/about-en.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About - TerraBloom" />
+    <meta name="twitter:description" content="TerraBloom's unique concept and development story." />
+    <meta name="twitter:image" content="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767523872/TerraBloom_Key_Art-Build_Defend_Restore_3_phases%20V2.png.jpg" />
+    <link rel="canonical" href="https://terrabloom.dev/about-en.html" />
+    <link rel="alternate" hreflang="fr" href="https://terrabloom.dev/about.html" />
+    <link rel="alternate" hreflang="en" href="https://terrabloom.dev/about-en.html" />
     <title>About - TerraBloom</title>
     <link rel="icon" href="favicon.png" sizes="512x512" type="image/png" />
 
@@ -13,25 +26,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <a href="index-en.html" class="logo">TerraBloom</a>
-
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
-        <nav>
-          <a href="index-en.html">Home</a>
-          <a href="about-en.html" class="active">About</a>
-          <a href="blog-en.html">DevLog</a>
-          <a href="contact-en.html">Contact</a>
-        </nav>
-
-        <div class="controls">
-          <button id="theme-toggle" class="toggle-btn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-          <button id="lang-toggle" class="toggle-btn" aria-label="Toggle language" title="Passer au français">FR</button>
-        </div>
-      </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
       <section class="about">
@@ -50,31 +45,63 @@
             three-phase structure alternates between tactical moments and action-packed sequences.
           </p>
 
-          <h2>The Gameplay</h2>
+          <h2>Discover the Gameplay</h2>
           <p>
-            The player explores a world divided into thematic chunks. Each chunk represents a distinct biome with unique restoration challenges:
-            <strong>Desert Meadow</strong> (sandy lands blooming with life), <strong>Volcanic Jungle</strong> (lava flows transforming into verdant
-            forests), <strong>Frozen Spring</strong> (ice melting into fresh waters), and <strong>Toxic Paradise</strong> (corrupted zones purified
-            into vibrant ecosystems).
+            TerraBloom offers a unique gameplay cycle where every decision impacts your survival.<br />
+            The world is divided into thematic biomes, each offering specific challenges and opportunities.
           </p>
-          <p>The game cycle is divided into three distinct phases:</p>
-          <ul>
-            <li>
-              <strong>Phase 0 - World Assembly (5-10 min):</strong> Assemble terrain with modular 3D chunks, create traversal paths, and position your
-              defense towers.
-            </li>
-            <li>
-              <strong>Phase 1 - Strategic Exploration (7-15 min):</strong> Explore the environment while carrying the restoration artifact. Traverse
-              your terrain and analyze optimal defensive positions.
-            </li>
-            <li>
-              <strong>Phase 2 - Intensive Defense (10-15 min):</strong> Defend the artifact against waves of hostile creatures and corrupted machines
-              in FPS/TPS combat. Use upgradable weapons and skills. Survive all waves to secure biome restoration.
-            </li>
-          </ul>
-          <p>
-            <strong>Outcome:</strong> The biome transforms (corrupted → vibrant), becomes a safe and preserved zone, and unlocks new areas. The loop
-            repeats with increased complexity.
+
+          <div class="phases-grid">
+            <div class="phase">
+              <div class="phase-image">
+                <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767607289/h4yj7asmaprckqvxrgoe.png" alt="Build Phase" />
+              </div>
+              <div class="phase-content">
+                <div class="phase-title">📐 Phase 0: Crafting</div>
+                <p class="phase-description">
+                  Assemble your terrain with predefined terrain blocks. Create a passable path and plan your defense lines before the action begins.
+                </p>
+              </div>
+            </div>
+
+            <div class="phase">
+              <div class="phase-image">
+                <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767607289/a0j7pxevbt4spgtmfaoh.png" alt="Exploration Phase" />
+              </div>
+              <div class="phase-content">
+                <div class="phase-title">🛡️ Phase 1: Strategy</div>
+                <p class="phase-description">
+                  Analyze the map and position your defense elements in strategic locations. Transport the restoration artifact to its installation
+                  point.
+                </p>
+              </div>
+            </div>
+
+            <div class="phase">
+              <div class="phase-image">
+                <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767607289/yro6cycuhrljdbt82fnu.png" alt="Combat Phase" />
+              </div>
+              <div class="phase-content">
+                <div class="phase-title">⚔️ Phase 2: Combat</div>
+                <p class="phase-description">
+                  Defend the artifact against waves of hostile creatures. Survive until the end of the cycle to restore life in the biome.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chunk-system">
+            <h3>The "Chunk System": Infinite Replayability</h3>
+            <p>
+              Unlike classic terrains, TerraBloom uses an architecture based on <strong>Chunks</strong> (modular terrain blocks). Each session is
+              different: you never play on the same map. You decide the world's topography, using the terrain to your advantage to optimize your
+              defense.
+            </p>
+          </div>
+
+          <p class="chunk-system-footer">
+            <strong>Outcome:</strong> Once enemy waves are defeated, the restored biome becomes a safe zone that unlocks new technologies and new
+            areas to explore.
           </p>
 
           <img
@@ -96,68 +123,95 @@
 
           <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767523873/TerraBloom_Key_Art_4_Biomes.png.jpg" alt="TerraBloom - 4 Biomes" />
 
-          <h2>Development</h2>
-          <p>
-            TerraBloom has been in development since December 2025 and is expected to launch between 2027 and 2028. The project follows a clear
-            roadmap with several development phases:
-          </p>
-          <ul>
-            <li><strong>Phase 1 (2026):</strong> Core prototype, foundational mechanics</li>
-            <li><strong>Phase 2 (2026-2027):</strong> Game content, biomes, FPS/TD gameplay</li>
-            <li><strong>Phase 3 (2027-2028):</strong> Polish, optimization and launch</li>
-          </ul>
+          <h2 id="developer">The Developer</h2>
+
+          <div class="developer-bio">
+            <img
+              src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767712060/nmyr7crgnjdtef35fua1.png"
+              alt="Laurent Ongaro"
+              class="developer-avatar"
+            />
+            <div class="developer-content">
+              <h3>Laurent Ongaro</h3>
+              <p class="developer-role">Solo Developer • Software Engineer</p>
+              <p>
+                After 30 years of experience in software development (finance, healthcare, industry), I'm now working on a personal project: creating
+                a game that combines strategy, action, and exploration in a living world.
+              </p>
+              <p>TerraBloom applies professional methods and solid architecture to deliver a smooth and immersive gaming experience.</p>
+            </div>
+          </div>
+
+          <h2 id="timeline">Development Timeline</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge">Pre-Alpha</span>
+                <div class="timeline-date">December 2025 → June 2026</div>
+                <h4>Phase 1: Technical Foundations</h4>
+                <ul>
+                  <li>Functional modular terrain system (Chunks)</li>
+                  <li>Core mechanics: defense placement, FPS combat</li>
+                  <li>Solid and scalable technical architecture</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge">Alpha / Beta</span>
+                <div class="timeline-date">July 2026 → December 2027</div>
+                <h4>Phase 2: Content & Optimization</h4>
+                <ul>
+                  <li>4 playable biomes with specific enemies</li>
+                  <li>Progression system (weapons, towers, skills)</li>
+                  <li>Gameplay balancing and graphical optimizations</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge timeline-badge-launch">Launch</span>
+                <div class="timeline-date">Throughout 2028</div>
+                <h4>Phase 3: Finalization & Release</h4>
+                <ul>
+                  <li>Final polish and extensive testing</li>
+                  <li>Marketing campaign and communication</li>
+                  <li>PC release (Steam)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <h2>Target Platform</h2>
           <p>
             TerraBloom is designed to run on a wide range of hardware, from mid-range PCs to current-generation consoles. The focus is on performance
-            and optimization.
-          </p>
-
-          <h2>The Team</h2>
-          <p>
-            TerraBloom is developed by <strong>Laurent Ongaro</strong>, a software engineer with over 30 years of development experience. The project
-            benefits from proven professional methods and technical expertise acquired over the years in varied environments, applied here to creating
-            an ambitious indie game.
+            and optimization to ensure a smooth experience even on modest configurations.
           </p>
 
           <h2>Follow Development</h2>
           <p>
-            Stay tuned for regular updates via our <a href="blog-en.html">DevLog</a>. You can also follow us on
-            <a href="https://x.com/LaurentOngaro" target="_blank">Twitter/X</a>,
-            <a href="https://github.com/LaurentOngaro" target="_blank">GitHub</a> or <a href="https://patreon.com" target="_blank">Patreon</a>.
+            Stay tuned for regular updates via our <a href="blog-en.html">DevLog</a>.<br />
+            You can also follow the project on <a href="https://patreon.com" target="_blank">Patreon</a> and
+            <a href="https://x.com/LaurentOngaro" target="_blank">Twitter/X</a>.
+          </p>
+          <h3>Other contributions</h3>
+          <p>
+            Discover other open-source projects on <a href="https://github.com/LaurentOngaro" target="_blank">GitHub</a> or
+            <a href="https://gitlab.com/LaurentOngaro" target="_blank">GitLab</a>.
           </p>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About</h3>
-          <a href="about-en.html">The Game</a>
-          <a href="about-en.html">Development</a>
-        </div>
-        <div class="footer-section">
-          <h3>Community</h3>
-          <a href="https://x.com/LaurentOngaro" target="_blank">Twitter/X</a>
-          <a href="https://github.com/LaurentOngaro" target="_blank">GitHub</a>
-          <a href="https://patreon.com" target="_blank">Patreon</a>
-        </div>
-        <div class="footer-section">
-          <h3>Resources</h3>
-          <a href="blog-en.html">DevLog</a>
-          <a href="contact-en.html">Contact</a>
-        </div>
-        <div class="footer-section">
-          <h3>Legal</h3>
-          <a href="privacy-en.html">Privacy</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> | <a href="privacy-en.html">Privacy</a></p>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
+    <script src="js/components.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

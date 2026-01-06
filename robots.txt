@@ -1,0 +1,27 @@
+# TerraBloom Robots Configuration
+# Allows search engines to crawl all public content
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /index-en.html
+Allow: /about.html
+Allow: /about-en.html
+Allow: /blog.html
+Allow: /blog-en.html
+Allow: /contact.html
+Allow: /contact-en.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+Disallow: /_tools/
+Disallow: /_helpers/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://terrabloom.dev/sitemap.xml
+
+# Crawl delay (in seconds) - be respectful
+Crawl-delay: 1
+Request-rate: 1/1s

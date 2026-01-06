@@ -1,0 +1,88 @@
+# ==================================================
+# TerraBloom - Apache Server Configuration
+# Cache-Control and Expires Headers
+# ==================================================
+
+# Enable ExpiresActive
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Default expiration: 1 week
+  ExpiresDefault "access plus 1 week"
+
+  # HTML - 1 hour (pages mises à jour fréquemment)
+  ExpiresByType text/html "access plus 1 hour"
+
+  # CSS - 1 month
+  ExpiresByType text/css "access plus 1 month"
+
+  # JavaScript - 1 month
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+
+  # Images - 1 year
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Fonts - 1 year
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # JSON - 1 day
+  ExpiresByType application/json "access plus 1 day"
+</IfModule>
+
+# Cache-Control Headers
+<IfModule mod_headers.c>
+  # HTML - No cache for dynamic content
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+
+  # CSS and JavaScript - 1 month
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+
+  # Images - 1 year
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Fonts - 1 year
+  <FilesMatch "\.(woff|woff2|ttf|otf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# Compression Gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  # X-Content-Type-Options
+  Header set X-Content-Type-Options "nosniff"
+
+  # X-Frame-Options
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # X-XSS-Protection
+  Header set X-XSS-Protection "1; mode=block"
+
+  # Referrer-Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
