@@ -3,6 +3,13 @@
    Loads DevLog posts from JSON dynamically
    ============================================ */
 
+function getCurrentLanguage() {
+  const currentPath = window.location.pathname;
+  const filename = currentPath.split('/').pop() || 'index.html';
+  const isEnglishPage = filename.endsWith('-en.html');
+  return isEnglishPage ? 'en' : 'fr';
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   loadBlogPosts();
 });
@@ -25,7 +32,7 @@ async function loadBlogPosts() {
     const posts = data.posts || [];
 
     // Get current language
-    const currentLang = localStorage.getItem('lang') || 'fr';
+    const currentLang = getCurrentLanguage();
 
     if (posts.length === 0) {
       blogPostsContainer.innerHTML = '<div class="no-posts">No posts yet. Check back soon!</div>';
@@ -90,11 +97,13 @@ function togglePostContent(event, postId) {
   const content = post.querySelector('.blog-post-content');
   const link = post.querySelector('.read-more');
 
+  const lang = getCurrentLanguage();
+
   if (content.style.display === 'none') {
     content.style.display = 'block';
-    link.textContent = localStorage.getItem('lang') === 'en' ? 'Show less' : 'Afficher moins';
+    link.textContent = lang === 'en' ? 'Show less' : 'Afficher moins';
   } else {
     content.style.display = 'none';
-    link.textContent = localStorage.getItem('lang') === 'en' ? 'Read more' : 'Lire plus';
+    link.textContent = lang === 'en' ? 'Read more' : 'Lire plus';
   }
 }

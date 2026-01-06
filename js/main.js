@@ -45,8 +45,11 @@ function setTheme(theme) {
 function updateThemeButton(theme) {
   const themeToggle = document.getElementById('theme-toggle');
   if (themeToggle) {
+    const lang = getCurrentLanguage();
     themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
-    themeToggle.setAttribute('title', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+    const darkTitle = lang === 'en' ? 'Switch to dark mode' : 'Passer en mode sombre';
+    const lightTitle = lang === 'en' ? 'Switch to light mode' : 'Passer en mode clair';
+    themeToggle.setAttribute('title', theme === 'light' ? darkTitle : lightTitle);
   }
 }
 
@@ -54,16 +57,23 @@ function updateThemeButton(theme) {
    LANGUAGE MANAGEMENT (FR/EN)
    ============================================ */
 
+function getCurrentLanguage() {
+  const currentPath = window.location.pathname;
+  const filename = currentPath.split('/').pop() || 'index.html';
+  const isEnglishPage = filename.endsWith('-en.html');
+  return isEnglishPage ? 'en' : 'fr';
+}
+
 function initLanguage() {
   const langToggle = document.getElementById('lang-toggle');
 
-  // Load saved language
-  const savedLang = localStorage.getItem('lang') || 'fr';
-  setLanguage(savedLang);
+  // Detect current language from page
+  const currentLang = getCurrentLanguage();
+  setLanguage(currentLang);
 
   if (langToggle) {
     langToggle.addEventListener('click', function () {
-      const currentLang = localStorage.getItem('lang') || 'fr';
+      const currentLang = getCurrentLanguage();
       const newLang = currentLang === 'fr' ? 'en' : 'fr';
       redirectToLanguage(newLang);
     });
@@ -95,10 +105,12 @@ function redirectToLanguage(lang) {
     'about.html': { fr: 'about.html', en: 'about-en.html' },
     'blog.html': { fr: 'blog.html', en: 'blog-en.html' },
     'contact.html': { fr: 'contact.html', en: 'contact-en.html' },
+    'privacy.html': { fr: 'privacy.html', en: 'privacy-en.html' },
     'index-en.html': { fr: 'index.html', en: 'index-en.html' },
     'about-en.html': { fr: 'about.html', en: 'about-en.html' },
     'blog-en.html': { fr: 'blog.html', en: 'blog-en.html' },
     'contact-en.html': { fr: 'contact.html', en: 'contact-en.html' },
+    'privacy-en.html': { fr: 'privacy.html', en: 'privacy-en.html' },
   };
 
   const mapping = fileMap[currentFilename] || fileMap['index.html'];
@@ -182,34 +194,51 @@ function initFormspree() {
 
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
+      const lang = getCurrentLanguage();
+
+      // Translations
+      const messages = {
+        sending: lang === 'en' ? 'Sending...' : 'Envoi...',
+        sent: lang === 'en' ? '✅ Sent!' : '✅ Envoyé !',
+        error: lang === 'en' ? '❌ Error' : '❌ Erreur'
+      };
 
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
+      submitBtn.textContent = messages.sending;
 
       const formData = new FormData(form);
 
+      // Convert FormData to JSON object for Formspree
+      const data = {};
+      formData.forEach((value, key) => {
+        data[key] = value;
+      });
+
       fetch(form.getAttribute('action'), {
         method: 'POST',
-        body: formData,
+        body: JSON.stringify(data),
         headers: {
-          Accept: 'application/json',
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         },
       })
         .then((response) => {
           if (response.ok) {
             form.reset();
-            submitBtn.textContent = '✅ Sent!';
+            submitBtn.textContent = messages.sent;
             setTimeout(() => {
               submitBtn.disabled = false;
               submitBtn.textContent = originalText;
             }, 3000);
           } else {
-            throw new Error('Form submission failed');
+            return response.json().then(data => {
+              throw new Error(data.error || 'Form submission failed');
+            });
           }
         })
         .catch((error) => {
           console.error('Error:', error);
-          submitBtn.textContent = '❌ Error';
+          submitBtn.textContent = messages.error;
           setTimeout(() => {
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
