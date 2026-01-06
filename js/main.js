@@ -215,9 +215,23 @@ function initFormspree() {
       submitBtn.textContent = messages.sending;
 
       try {
+        // Execute reCAPTCHA v3 to get token
+        let token = null;
+        if (window.grecaptcha) {
+          token = await grecaptcha.execute('6LeL5kEsAAAAAI2cHJPrsmnmbxBFKrneQRXaOma3', { action: 'submit' });
+        }
+
+        // Prepare form data
+        const formData = new FormData(form);
+
+        // Add reCAPTCHA token if available
+        if (token) {
+          formData.append('g-recaptcha-response', token);
+        }
+
         const response = await fetch(form.action, {
           method: form.method,
-          body: new FormData(form),
+          body: formData,
           headers: {
             'Accept': 'application/json'
           }
@@ -240,7 +254,11 @@ function initFormspree() {
 
           if (data.errors && Array.isArray(data.errors)) {
             data.errors.forEach(err => {
-              errorHTML += `<li><strong>${err.field}:</strong> ${err.message}</li>`;
+              // Special handling for specific field names
+              const fieldDisplay = err.field === '_captcha' ? 'Captcha' :
+                                   err.field === 'g-recaptcha-response' ? 'reCAPTCHA' :
+                                   err.field;
+              errorHTML += `<li><strong>${fieldDisplay}:</strong> ${err.message}</li>`;
             });
             errorHTML += '</ul>';
             console.error('Validation errors:', data.errors);
