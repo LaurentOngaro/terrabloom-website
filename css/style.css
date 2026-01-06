@@ -566,11 +566,19 @@ nav a.active {
   padding: 2rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
-  transition: var(--transition);
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .blog-post:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(8px) translateY(-4px);
+  border-left-width: 8px;
+  background-color: var(--color-bg-secondary);
+}
+
+.blog-post:hover .blog-post-title {
+  color: var(--color-primary);
   transform: translateX(4px);
 }
 
@@ -586,6 +594,7 @@ nav a.active {
   color: var(--color-text-primary);
   margin-bottom: 1rem;
   font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 .blog-post-excerpt {
@@ -922,4 +931,73 @@ footer {
 
 .hidden {
   display: none;
+}
+/* ============================================
+   LEGAL PAGES (PRIVACY, ETC.)
+   ============================================ */
+
+.legal {
+  padding: 4rem 0;
+  background-color: var(--color-bg-primary);
+}
+
+.legal .container {
+  max-width: 900px;
+}
+
+.legal h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.legal .last-updated {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.legal h2 {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+.legal h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary-dark);
+}
+
+.legal p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.legal ul {
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+}
+
+.legal ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.legal strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.legal a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.legal a:hover {
+  color: var(--color-primary-light);
 }
