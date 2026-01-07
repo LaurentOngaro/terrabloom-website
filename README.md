@@ -74,4 +74,4 @@ Questions? Contact Laurent:
 
 - Twitter/X: [@LaurentOngaro](https://x.com/LaurentOngaro)
 - GitHub: [LaurentOngaro](https://github.com/LaurentOngaro)
-- Patreon: [TerraBloom](https://patreon.com)
+- Patreon: [TerraBloom](https://patreon.com/LaurentOngaro)
