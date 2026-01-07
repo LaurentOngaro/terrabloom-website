@@ -13,6 +13,18 @@
       "is_persistent": 1
     },
     {
+      "id": "004",
+      "date": "2026-01-06",
+      "title_fr": "Optimisation du site et préparation au lancement",
+      "title_en": "Site Optimization and Launch Preparation",
+      "excerpt_fr": "Amélioration des performances, clarification du positionnement du jeu et renforcement de la présence communautaire.",
+      "excerpt_en": "Performance improvements, clearer game positioning, and strengthened community presence.",
+      "content_fr": "<p>Optimisation complète du site web de TerraBloom. L'objectif : créer une expérience fluide qui met plus en avant l'esprit du jeu.</p><p><strong>Améliorations principales :</strong></p><ul><li>Optimisation des images et du chargement pour une meilleure fluidité</li><li>Clarification du positionnement du jeu : un hybride entre construction, exploration et action-défense, au sein d'un univers plutôt cosy</li><li>Renforcement des appels à l'action : accès facile au Discord et newsletter</li><li>Mise en avant de la communauté (liens sociaux plus visibles)</li><li>Amélioration de la documentation interne</li></ul><p>Le site est maintenant prêt à accueillir une communauté grandissante autour du projet.</p>",
+      "content_en": "<p>Complete optimization of TerraBloom's website. The goal: create a smooth experience that reflects more the game's spirit.</p><p><strong>Main improvements:</strong></p><ul><li>Image optimization and faster loading for better fluidity</li><li>Clearer game positioning: a hybrid of building, exploration, and action-defense, within a cozy universe</li><li>Stronger calls-to-action: easy Discord and newsletter access</li><li>Community visibility: social links prominently displayed</li><li>Better internal documentation</li></ul><p>The site is now ready to welcome the project growing community.</p>",
+      "category": "announcement",
+      "is_persistent": 1
+    },
+    {
       "id": "002",
       "date": "2025-12-15",
       "title_fr": "Démarrage du projet - Décembre 2025",

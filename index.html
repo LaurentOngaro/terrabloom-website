@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TerraBloom - Build. Defend. Restore. Un jeu indie 3D mélant crafting, défense et action. Développé par Laurent Ongaro." />
+    <meta name="description" content="TerraBloom - Un hybride cozy action-défense. Construisez, défendez avec stratégie et restaurez des écosystèmes. Développé par Laurent Ongaro." />
     <meta name="keywords" content="jeu vidéo, indie game, action-défense, exploration, crafting, jeu 3D" />
     <meta property="og:title" content="TerraBloom - Build. Defend. Restore." />
-    <meta property="og:description" content="Un jeu indie unique qui fusionne construction, stratégie et combat intensif dans un univers vivant et coloré." />
+    <meta property="og:description" content="Un hybride cozy action-défense: construction, stratégie, restauration. Un univers vivant et coloré, sans survie hardcore." />
     <meta property="og:image" content="https://res.cloudinary.com/dhcyqj41d/image/upload/v1766924009/TerraBloom_Key_Art_V2-Circular_Mandala.png.jpg" />
     <meta property="og:url" content="https://terrabloom.dev/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TerraBloom - Build. Defend. Restore." />
-    <meta name="twitter:description" content="Un jeu indie 3D mélant crafting, défense et action." />
+    <meta name="twitter:description" content="Un jeu hybride action-défense: construire, défendre avec stratégie, restaurer des écosystèmes." />
     <meta name="twitter:image" content="https://res.cloudinary.com/dhcyqj41d/image/upload/v1766924009/TerraBloom_Key_Art_V2-Circular_Mandala.png.jpg" />
     <link rel="canonical" href="https://terrabloom.dev/" />
     <link rel="alternate" hreflang="en" href="https://terrabloom.dev/index-en.html" />
@@ -27,25 +27,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <a href="index.html" class="logo">TerraBloom</a>
-
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
-        <nav>
-          <a href="index.html" class="active">Accueil</a>
-          <a href="about.html">À propos</a>
-          <a href="blog.html">DevLog</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="controls">
-          <button id="theme-toggle" class="toggle-btn" aria-label="Toggle theme" title="Changer le thème">🌙</button>
-          <button id="lang-toggle" class="toggle-btn" aria-label="Toggle language" title="Switch to English">EN</button>
-        </div>
-      </div>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
       <!-- HERO SECTION -->
@@ -59,6 +41,8 @@
 
             <h1>Un hybride Action-Défense Cosy</h1>
 
+            <p class="sub-tagline">Un jeu original mélant action et stratégie, furie et espoir, afin de soigner un monde malade.</p>
+
             <p class="hook">
               Construisez votre terrain grâce à des blocs prédéfinis.<br />
               Placez vos défenses stratégiquement.<br />
@@ -67,8 +51,21 @@
             </p>
 
             <div class="cta-buttons">
-              <button class="cta-button" onclick="scrollToElement('.concept')">En savoir plus</button>
-              <button class="cta-button secondary" onclick="scrollToElement('.newsletter')">Rester informé</button>
+              <button class="cta-button" onclick="window.open('https://discord.gg/tXkUqAfkbK','_blank')">Rejoindre la communauté (Discord)</button>
+              <button class="cta-button secondary" onclick="scrollToElement('.newsletter')">S'abonner aux actualités (Newsletter)</button>
+            </div>
+
+            <div class="quick-socials">
+              <span>Déjà intéressé ? Rejoignez la communauté :</span>
+              <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
+              <span>·</span>
+              <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
+              <span>·</span>
+              <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
+            </div>
+
+            <div class="about-cta">
+              <a href="about.html#developer">Rencontrer Laurent (30+ ans d'XP)</a>
             </div>
           </div>
           <div class="hero-image">

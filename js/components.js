@@ -108,9 +108,10 @@ const Components = {
         </div>
         <div class="footer-section">
           <h3>Communauté</h3>
+          <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
           <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
           <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
-          <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
+          <a href="https://www.youtube.com/@Laurent_GameDev" target="_blank" rel="noopener">YouTube</a>
         </div>
         <div class="footer-section">
           <h3>Développement</h3>
@@ -125,7 +126,7 @@ const Components = {
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a></p>
+        <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Développeur solo (30+ ans d'expérience)</p>
       </div>
     </footer>
   `,
@@ -144,6 +145,7 @@ const Components = {
           <h3>Community</h3>
           <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
           <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
+          <a href="https://www.youtube.com/@Laurent_GameDev" target="_blank" rel="noopener">YouTube</a>
           <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
         </div>
         <div class="footer-section">
@@ -159,7 +161,7 @@ const Components = {
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a></p>
+        <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Solo developer (30+ years of experience)</p>
       </div>
     </footer>
   `,
