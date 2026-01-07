@@ -81,6 +81,7 @@ Toutes les images sont hébergées sur **Cloudinary CDN** avec optimisations aut
 - `dpr_auto` : Support Retina
 
 **Exemples:**
+
 - Hero: `v1766924009/TerraBloom_Key_Art_V2-Circular_Mandala.png.jpg`
 - 3 Phases: `v1767523872/TerraBloom_Key_Art-Build_Defend_Restore_3_phases%20V2.png.jpg`
 - 4 Biomes: `v1767523873/TerraBloom_Key_Art_4_Biomes.png.jpg`
@@ -110,6 +111,7 @@ pwsh -File ../_Helpers/03_Maintenance/switchAssetMode.ps1 -Mode dev
 ```
 
 **Fonctionnement:**
+
 - Auto-découvre tous les fichiers HTML du dossier `website/`
 - Remplace les liens vers `style.css` / `*.js` par `style.min.css` / `*.min.js` (production)
 - Restaure les liens originaux en mode dev
@@ -129,3 +131,59 @@ Questions? Contact Laurent:
 - Twitter/X: [@LaurentOngaro](https://x.com/LaurentOngaro)
 - GitHub: [LaurentOngaro](https://github.com/LaurentOngaro)
 - Patreon: [LaurentOngaro](https://patreon.com/LaurentOngaro)
+
+---
+
+## ⚡ Performance
+
+### PageSpeed Insights (7 Jan 2026)
+
+**Scores** — [View Full Report](https://pagespeed.web.dev/analysis/https-playterrabloom-com/lhz3vrrs5t?form_factor=desktop)
+
+| Metric             | Score       | Status       |
+| ------------------ | ----------- | ------------ |
+| **Performance**    | **90/100**  | 🟢 Excellent |
+| **Accessibility**  | **91/100**  | 🟢 Very Good |
+| **Best Practices** | **100/100** | 🟢 Perfect   |
+| **SEO**            | **100/100** | 🟢 Perfect   |
+
+**Core Web Vitals (Desktop)**:
+
+| Metric                         | Value | Status        |
+| ------------------------------ | ----- | ------------- |
+| FCP (First Contentful Paint)   | 0.7s  | ✅            |
+| LCP (Largest Contentful Paint) | 0.7s  | ✅            |
+| TBT (Total Blocking Time)      | 0ms   | ✅            |
+| CLS (Cumulative Layout Shift)  | 0.198 | ⚠️ Acceptable |
+| Speed Index                    | 0.7s  | ✅            |
+
+### Optimizations Applied
+
+✅ **Minified Assets** — CSS + JS files optimized (terser, lightningcss)
+✅ **Cloudinary CDN** — Images auto-optimized (WebP, quality, sizing)
+✅ **Static HTML** — No server-side rendering delays
+✅ **GitHub Pages CDN** — Global distribution
+✅ **Minimal JavaScript** — Only essential interactivity
+✅ **Mobile-First CSS** — Efficient responsive design
+
+### Known Opportunities (Low Priority)
+
+From PageSpeed Insights report:
+
+- 🟡 **Render-blocking resources** — Estimated savings 490ms (not critical at 0.7s load)
+- 🟡 **Image delivery** — Estimated savings 145 KiB (already using Cloudinary auto-optimization)
+- ⚠️ **CLS** — Layout shift 0.198 (could add explicit width/height to images)
+- 🟡 **Unused JavaScript** — 55 KiB (components.js includes optional features)
+
+### Recommendations
+
+**Current Status**: ✅ **Production-ready** (Score 90 is excellent)
+
+**Optional Improvements** (if targeting 95+):
+
+1. Add explicit `width`/`height` to all `<img>` tags (reduces CLS)
+2. Inline critical CSS (first-paint optimization)
+3. Defer non-critical JavaScript (Google Analytics, etc.)
+4. Consider lazy-loading images below the fold
+
+**Decision**: Current performance is excellent for an indie game marketing site. Focus on content and game development rather than micro-optimizations.
