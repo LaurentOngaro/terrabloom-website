@@ -11,15 +11,15 @@ const Components = {
       about: 'about.html',
       blog: 'blog.html',
       contact: 'contact.html',
-      privacy: 'privacy.html'
+      privacy: 'privacy.html',
     },
     en: {
       index: 'index-en.html',
       about: 'about-en.html',
       blog: 'blog-en.html',
       contact: 'contact-en.html',
-      privacy: 'privacy-en.html'
-    }
+      privacy: 'privacy-en.html',
+    },
   },
 
   // Header français
@@ -108,7 +108,7 @@ const Components = {
         </div>
         <div class="footer-section">
           <h3>Communauté</h3>
-          <a href="https://discord.gg/terrabloom" target="_blank" rel="noopener">Discord</a>
+          <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
           <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
           <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
         </div>
@@ -142,7 +142,7 @@ const Components = {
         </div>
         <div class="footer-section">
           <h3>Community</h3>
-          <a href="https://discord.gg/terrabloom" target="_blank" rel="noopener">Discord</a>
+          <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
           <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
           <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
         </div>
@@ -201,7 +201,7 @@ const Components = {
 
     const lang = document.documentElement.lang || 'fr';
     footerContainer.innerHTML = lang === 'en' ? this.footerEN : this.footerFR;
-  }
+  },
 };
 
 // Initialiser les composants au chargement
