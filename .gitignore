@@ -3,5 +3,6 @@ _Docs/
 node_modules/
 
 # Minified files (generated automatically)
-*.min.js
-*.min.css
+# they must be committed because they are needed in production in for a github page
+# *.min.js
+# *.min.css
