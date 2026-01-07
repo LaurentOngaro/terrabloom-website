@@ -9,17 +9,24 @@ Site officiel du jeu indie TerraBloom - Build. Defend. Restore.
 /
 ├── index.html              \# Accueil (FR)
 ├── index-en.html           \# Accueil (EN)
-├── about.html              \# À propos (FR)
-├── about-en.html           \# À propos (EN)
+├── game.html               # Le jeu - Gameplay détaillé (FR)
+├── game-en.html            # Le jeu - Gameplay détaillé (EN)
+├── about.html              # À propos du dev - Crédibilité (FR)
+├── about-en.html           # À propos du dev - Crédibilité (EN)
 ├── blog.html               \# DevLog (FR)
 ├── blog-en.html            \# DevLog (EN)
 ├── contact.html            \# Contact (FR)
 ├── contact-en.html         \# Contact (EN)
+├── privacy.html            # Politique de confidentialité (FR)
+├── privacy-en.html         # Politique de confidentialité (EN)
 ├── css/
-│   └── style.css           \# Styles (Dark/Light theme)
+│   ├── style.css           \# Styles (Dark/Light theme)
+│   └── style.min.css       \#idem mais en version minifiée
 ├── js/
 │   ├── main.js             \# Navigation + Theme + Language
-│   └── blog-loader.js      \# Charge les posts depuis devlog.json
+│   ├── components.js       \# Element communs injectés dans les pages
+│   ├── blog-loader.js      \# Charge les posts depuis devlog.json
+│   └── */min.js            \#idem mais en version minifiée
 ├── data/
 │   └── devlog.json         \# Posts du DevLog
 └── README.md               \# Documentation
@@ -29,10 +36,16 @@ Site officiel du jeu indie TerraBloom - Build. Defend. Restore.
 ## 🎨 Fonctionnalités
 
 ✅ **Dark/Light Mode Toggle** - Persistant via localStorage
-✅ **Français/Anglais** - Support multilingue complet
-✅ **DevLog Auto-Load** - Posts chargés depuis JSON
+✅ **Français/Anglais** - Support multilingue complet (6 paires de pages)
+✅ **DevLog Auto-Load** - Posts chargés depuis devlog.json
 ✅ **Responsive Design** - Mobile-first, compatible tous écrans
 ✅ **Formspree Integration** - Formulaire de contact GDPR-compliant
+✅ **Components System** - Header/Footer/Newsletter injectés dynamiquement
+✅ **Back-to-Top Button** - Bouton fixe avec smooth scroll (apparaît après 300px)
+✅ **Footer Disclaimer** - Avertissement pré-alpha visible (boîte orange)
+✅ **Chunk System Explanation** - Architecture de terrain modulaire documentée
+✅ **Minification Pipeline** - Assets optimisés (CSS + JS) avec npm scripts
+✅ **Asset Mode Switcher** - Script PowerShell pour basculer dev/prod
 ✅ **Clean Design** - Inspiré par GOG, épuré et professionnel
 
 ## 🎨 Couleurs & Brand
@@ -59,14 +72,55 @@ Accent:    #FFD700 (Sunrise Gold)
 
 ## 📸 Images
 
-Les images utilisent actuellement des URLs S3 externes :
+Toutes les images sont hébergées sur **Cloudinary CDN** avec optimisations automatiques :
 
-- Hero (minecraft-globe): `f62cb24b-966f-4c2d-9ee5-0b93b105bb0a`
-- Phases (build-defend-restore): `f094d0aa-5f31-4a68-9f20-7238942b1c71`
-- Biomes (4-biomes): `1a4da2d3-b0a8-47fe-8e10-2255d1bc78bf`
-- Artifact: `5d57bf62-10c5-45af-9d36-c8bbce879c8e`
+- `q_auto` : Qualité adaptative
+- `f_auto` : Format automatique (WebP si supporté)
+- `w_*` : Largeur responsive
+- `c_limit` : Crop intelligent
+- `dpr_auto` : Support Retina
 
-**Pour héberger localement :**
+**Exemples:**
+- Hero: `v1766924009/TerraBloom_Key_Art_V2-Circular_Mandala.png.jpg`
+- 3 Phases: `v1767523872/TerraBloom_Key_Art-Build_Defend_Restore_3_phases%20V2.png.jpg`
+- 4 Biomes: `v1767523873/TerraBloom_Key_Art_4_Biomes.png.jpg`
+
+## 🛠️ Build & Optimisation
+
+### Scripts npm disponibles
+
+```bash
+npm run minify:css    # Minifie style.css → style.min.css
+npm run minify:js     # Minifie tous les .js → .min.js
+npm run minify        # Minifie CSS + JS
+npm run watch:css     # Watch mode pour CSS
+npm run watch:js      # Watch mode pour JS
+```
+
+### Script PowerShell (Asset Mode Switcher)
+
+Fichier: `../_Helpers/03_Maintenance/switchAssetMode.ps1`
+
+```powershell
+# Basculer en mode production (minifié)
+pwsh -File ../_Helpers/03_Maintenance/switchAssetMode.ps1 -Mode production
+
+# Revenir en mode développement (source)
+pwsh -File ../_Helpers/03_Maintenance/switchAssetMode.ps1 -Mode dev
+```
+
+**Fonctionnement:**
+- Auto-découvre tous les fichiers HTML du dossier `website/`
+- Remplace les liens vers `style.css` / `*.js` par `style.min.css` / `*.min.js` (production)
+- Restaure les liens originaux en mode dev
+
+### VS Code Tasks
+
+Trois tasks disponibles dans `.vscode/tasks.json` :
+
+1. **Switch to Production Mode** → Bascule vers assets minifiés
+2. **Switch to Dev Mode** → Restaure assets source
+3. **Minify All Assets** → Lance `npm run minify`
 
 ## 📞 Support
 
@@ -74,4 +128,4 @@ Questions? Contact Laurent:
 
 - Twitter/X: [@LaurentOngaro](https://x.com/LaurentOngaro)
 - GitHub: [LaurentOngaro](https://github.com/LaurentOngaro)
-- Patreon: [TerraBloom](https://patreon.com/LaurentOngaro)
+- Patreon: [LaurentOngaro](https://patreon.com/LaurentOngaro)
