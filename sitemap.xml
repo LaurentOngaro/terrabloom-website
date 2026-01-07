@@ -8,68 +8,68 @@
 
   <!-- French Pages -->
   <url>
-    <loc>https://terrabloom.dev/</loc>
+    <loc>https://playterrabloom.com/</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://terrabloom.dev/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/index-en.html" />
   </url>
 
   <url>
-    <loc>https://terrabloom.dev/about.html</loc>
+    <loc>https://playterrabloom.com/about.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://terrabloom.dev/about-en.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/about-en.html" />
   </url>
 
   <url>
-    <loc>https://terrabloom.dev/blog.html</loc>
+    <loc>https://playterrabloom.com/blog.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://terrabloom.dev/blog-en.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/blog-en.html" />
   </url>
 
   <url>
-    <loc>https://terrabloom.dev/contact.html</loc>
+    <loc>https://playterrabloom.com/contact.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://terrabloom.dev/contact-en.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/contact-en.html" />
   </url>
 
   <!-- English Pages -->
   <url>
-    <loc>https://terrabloom.dev/index-en.html</loc>
+    <loc>https://playterrabloom.com/index-en.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://terrabloom.dev/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/" />
   </url>
 
   <url>
-    <loc>https://terrabloom.dev/about-en.html</loc>
+    <loc>https://playterrabloom.com/about-en.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://terrabloom.dev/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/about.html" />
   </url>
 
   <url>
-    <loc>https://terrabloom.dev/blog-en.html</loc>
+    <loc>https://playterrabloom.com/blog-en.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://terrabloom.dev/blog.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/blog.html" />
   </url>
 
   <url>
-    <loc>https://terrabloom.dev/contact-en.html</loc>
+    <loc>https://playterrabloom.com/contact-en.html</loc>
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://terrabloom.dev/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/contact.html" />
   </url>
 
 </urlset>

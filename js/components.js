@@ -8,6 +8,7 @@ const Components = {
   pages: {
     fr: {
       index: 'index.html',
+      game: 'game.html',
       about: 'about.html',
       blog: 'blog.html',
       contact: 'contact.html',
@@ -15,6 +16,7 @@ const Components = {
     },
     en: {
       index: 'index-en.html',
+      game: 'game-en.html',
       about: 'about-en.html',
       blog: 'blog-en.html',
       contact: 'contact-en.html',
@@ -32,6 +34,7 @@ const Components = {
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
           <a href="${p.index}" ${activePage === 'index' ? 'class="active"' : ''}>Accueil</a>
+          <a href="${p.game}" ${activePage === 'game' ? 'class="active"' : ''}>Le Jeu</a>
           <a href="${p.about}" ${activePage === 'about' ? 'class="active"' : ''}>À propos</a>
           <a href="${p.blog}" ${activePage === 'blog' ? 'class="active"' : ''}>DevLog</a>
           <a href="${p.contact}" ${activePage === 'contact' ? 'class="active"' : ''}>Contact</a>
@@ -55,6 +58,7 @@ const Components = {
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
           <a href="${p.index}" ${activePage === 'index' ? 'class="active"' : ''}>Home</a>
+          <a href="${p.game}" ${activePage === 'game' ? 'class="active"' : ''}>Game</a>
           <a href="${p.about}" ${activePage === 'about' ? 'class="active"' : ''}>About</a>
           <a href="${p.blog}" ${activePage === 'blog' ? 'class="active"' : ''}>DevLog</a>
           <a href="${p.contact}" ${activePage === 'contact' ? 'class="active"' : ''}>Contact</a>
@@ -126,6 +130,12 @@ const Components = {
         </div>
       </div>
       <div class="footer-bottom">
+        <button id="back-to-top" class="back-to-top" aria-label="Retour en haut" title="Retour en haut">
+          ↑ Haut de page
+        </button>
+        <div class="site-disclaimer-box">
+          <strong>⚠️ Pré‑alpha</strong> — Jeu en développement actif. Contenu et spécifications susceptibles d'évoluer.
+        </div>
         <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Développeur solo (30+ ans d'expérience)</p>
       </div>
     </footer>
@@ -161,6 +171,12 @@ const Components = {
         </div>
       </div>
       <div class="footer-bottom">
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+          ↑ Top
+        </button>
+        <div class="site-disclaimer-box">
+          <strong>⚠️ Early‑stage</strong> — Game in active development. Content and specifications subject to change.
+        </div>
         <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Solo developer (30+ years of experience)</p>
       </div>
     </footer>

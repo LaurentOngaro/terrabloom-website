@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initFormspree();
   initGalleryAnimation();
   initGoogleAnalytics();
+  initBackToTop();
 });
 
 /* ============================================
@@ -343,4 +344,31 @@ function initGoogleAnalytics() {
   script.async = true;
   script.src = 'https://www.googletagmanager.com/gtag/js?id=G-8LMY4GLCC9';
   document.head.appendChild(script);
+}
+
+/* ============================================
+   BACK TO TOP BUTTON
+   ============================================ */
+
+function initBackToTop() {
+  const backToTopBtn = document.getElementById('back-to-top');
+
+  if (!backToTopBtn) return;
+
+  // Show/hide button on scroll
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+
+  // Scroll to top on click
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
