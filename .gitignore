@@ -1,2 +1,7 @@
-BAK/
--Tools/
+_Helpers/
+_Docs/
+node_modules/
+
+# Minified files (generated automatically)
+*.min.js
+*.min.css

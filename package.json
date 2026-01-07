@@ -1,0 +1,20 @@
+{
+  "name": "terrabloom-website",
+  "version": "1.0.0",
+  "description": "TerraBloom static website with minification",
+  "scripts": {
+    "minify:js": "terser js/main.js -o js/main.min.js -c -m && terser js/components.js -o js/components.min.js -c -m && terser js/blog-loader.js -o js/blog-loader.min.js -c -m",
+    "minify:css": "lightningcss --minify css/style.css -o css/style.min.css",
+    "minify": "npm run minify:js && npm run minify:css",
+    "watch:js": "chokidar \"js/*.js\" \"!js/*.min.js\" -c \"npm run minify:js\"",
+    "watch:css": "chokidar \"css/*.css\" \"!css/*.min.css\" -c \"npm run minify:css\"",
+    "dev": "npm-run-all --parallel watch:js watch:css"
+  },
+  "devDependencies": {
+    "terser": "^5.27.0",
+    "lightningcss-cli": "^1.23.0",
+    "chokidar-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "private": true
+}

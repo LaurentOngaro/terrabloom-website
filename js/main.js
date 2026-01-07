@@ -202,7 +202,7 @@ function initFormspree() {
         sending: lang === 'en' ? 'Sending...' : 'Envoi...',
         sent: lang === 'en' ? '✅ Sent!' : '✅ Envoyé !',
         error: lang === 'en' ? '❌ Error' : '❌ Erreur',
-        validation_error: lang === 'en' ? 'Please fix the following errors:' : 'Veuillez corriger les erreurs suivantes :'
+        validation_error: lang === 'en' ? 'Please fix the following errors:' : 'Veuillez corriger les erreurs suivantes :',
       };
 
       // Clear previous error messages
@@ -233,8 +233,8 @@ function initFormspree() {
           method: form.method,
           body: formData,
           headers: {
-            'Accept': 'application/json'
-          }
+            Accept: 'application/json',
+          },
         });
 
         if (response.ok) {
@@ -253,11 +253,9 @@ function initFormspree() {
           let errorHTML = `<strong>${messages.validation_error}</strong><ul>`;
 
           if (data.errors && Array.isArray(data.errors)) {
-            data.errors.forEach(err => {
+            data.errors.forEach((err) => {
               // Special handling for specific field names
-              const fieldDisplay = err.field === '_captcha' ? 'Captcha' :
-                                   err.field === 'g-recaptcha-response' ? 'reCAPTCHA' :
-                                   err.field;
+              const fieldDisplay = err.field === '_captcha' ? 'Captcha' : err.field === 'g-recaptcha-response' ? 'reCAPTCHA' : err.field;
               errorHTML += `<li><strong>${fieldDisplay}:</strong> ${err.message}</li>`;
             });
             errorHTML += '</ul>';
