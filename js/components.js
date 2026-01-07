@@ -108,7 +108,7 @@ const Components = {
         </div>
         <div class="footer-section">
           <h3>Communauté</h3>
-          <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
+          <a href="https://www.patreon.com/LaurentOngaro" target="_blank" rel="noopener">Patreon</a>
           <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
           <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
           <a href="https://www.youtube.com/@Laurent_GameDev" target="_blank" rel="noopener">YouTube</a>
@@ -143,10 +143,10 @@ const Components = {
         </div>
         <div class="footer-section">
           <h3>Community</h3>
+          <a href="https://www.patreon.com/LaurentOngaro" target="_blank" rel="noopener">Patreon</a>
           <a href="https://discord.gg/tXkUqAfkbK" target="_blank" rel="noopener">Discord</a>
           <a href="https://x.com/LaurentOngaro" target="_blank" rel="noopener">Twitter/X</a>
           <a href="https://www.youtube.com/@Laurent_GameDev" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://patreon.com/terrabloom" target="_blank" rel="noopener">Patreon</a>
         </div>
         <div class="footer-section">
           <h3>Development</h3>
