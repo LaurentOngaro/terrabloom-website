@@ -30,7 +30,9 @@ const Components = {
     return `
     <header>
       <div class="header-container">
-        <a href="${p.index}" class="logo">TerraBloom</a>
+        <a href="${p.index}" class="logo">
+          <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767861595/waacmqjtnyehenq3coi1.png" alt="TerraBloom" width="120" height="auto" />
+        </a>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
           <a href="${p.index}" ${activePage === 'index' ? 'class="active"' : ''}>Accueil</a>
@@ -54,7 +56,9 @@ const Components = {
     return `
     <header>
       <div class="header-container">
-        <a href="${p.index}" class="logo">TerraBloom</a>
+        <a href="${p.index}" class="logo">
+          <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767861595/waacmqjtnyehenq3coi1.png" alt="TerraBloom" width="120" height="auto" />
+        </a>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
           <a href="${p.index}" ${activePage === 'index' ? 'class="active"' : ''}>Home</a>

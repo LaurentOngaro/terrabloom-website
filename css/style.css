@@ -107,10 +107,19 @@ header {
   font-weight: 700;
   color: var(--color-primary);
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .logo:hover {
   color: var(--color-primary-light);
+  opacity: 0.9;
 }
 
 nav {
@@ -199,13 +208,25 @@ nav a.active {
 }
 
 .hero-logo {
-  font-size: 1rem;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-logo-text {
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
 .tagline {
   font-size: 1.5rem;
   font-weight: 600;
