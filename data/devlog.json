@@ -1,18 +1,6 @@
 {
   "posts": [
     {
-      "id": "001",
-      "date": "2026-01-04",
-      "title_fr": "Mise en ligne du site",
-      "title_en": "Website Launch",
-      "excerpt_fr": "Le site officiel de TerraBloom est maintenant accessible. Vous y trouverez toutes les informations sur le projet et son avancement.",
-      "excerpt_en": "TerraBloom's official website is now live. You'll find all project information and development updates here.",
-      "content_fr": "<p>Le site de TerraBloom est maintenant en ligne. Il servira de point central pour suivre l'avancement du projet, découvrir le jeu et accéder aux ressources de développement.</p><p><strong>Ce que vous y trouverez :</strong></p><ul><li>Informations détaillées sur le gameplay et la vision du jeu</li><li>Suivi régulier du développement via le DevLog</li><li>Galerie visuelle des biomes et mécaniques</li><li>Documentation technique pour la communauté</li></ul><p>Le site évoluera au fil du projet. N'hésitez pas à partager vos retours.</p>",
-      "content_en": "<p>TerraBloom's website is now live. It will serve as the central hub for tracking project progress, discovering the game, and accessing development resources.</p><p><strong>What you'll find here:</strong></p><ul><li>Detailed gameplay information and game vision</li><li>Regular development updates via DevLog</li><li>Visual gallery of biomes and mechanics</li><li>Technical documentation for the community</li></ul><p>The site will evolve alongside the project. Feel free to share your feedback.</p>",
-      "category": "announcement",
-      "is_persistent": 1
-    },
-    {
       "id": "004",
       "date": "2026-01-06",
       "title_fr": "Optimisation du site et préparation au lancement",
@@ -21,6 +9,18 @@
       "excerpt_en": "Performance improvements, clearer game positioning, and strengthened community presence.",
       "content_fr": "<p>Optimisation complète du site web de TerraBloom. L'objectif : créer une expérience fluide qui met plus en avant l'esprit du jeu.</p><p><strong>Améliorations principales :</strong></p><ul><li>Optimisation des images et du chargement pour une meilleure fluidité</li><li>Clarification du positionnement du jeu : un hybride entre construction, exploration et action-défense, au sein d'un univers plutôt cosy</li><li>Renforcement des appels à l'action : accès facile au Discord et newsletter</li><li>Mise en avant de la communauté (liens sociaux plus visibles)</li><li>Amélioration de la documentation interne</li></ul><p>Le site est maintenant prêt à accueillir une communauté grandissante autour du projet.</p>",
       "content_en": "<p>Complete optimization of TerraBloom's website. The goal: create a smooth experience that reflects more the game's spirit.</p><p><strong>Main improvements:</strong></p><ul><li>Image optimization and faster loading for better fluidity</li><li>Clearer game positioning: a hybrid of building, exploration, and action-defense, within a cozy universe</li><li>Stronger calls-to-action: easy Discord and newsletter access</li><li>Community visibility: social links prominently displayed</li><li>Better internal documentation</li></ul><p>The site is now ready to welcome the project growing community.</p>",
+      "category": "announcement",
+      "is_persistent": 1
+    },
+    {
+      "id": "001",
+      "date": "2026-01-04",
+      "title_fr": "Mise en ligne du site",
+      "title_en": "Website Launch",
+      "excerpt_fr": "Le site officiel de TerraBloom est maintenant accessible. Vous y trouverez toutes les informations sur le projet et son avancement.",
+      "excerpt_en": "TerraBloom's official website is now live. You'll find all project information and development updates here.",
+      "content_fr": "<p>Le site de TerraBloom est maintenant en ligne. Il servira de point central pour suivre l'avancement du projet, découvrir le jeu et accéder aux ressources de développement.</p><p><strong>Ce que vous y trouverez :</strong></p><ul><li>Informations détaillées sur le gameplay et la vision du jeu</li><li>Suivi régulier du développement via le DevLog</li><li>Galerie visuelle des biomes et mécaniques</li><li>Documentation technique pour la communauté</li></ul><p>Le site évoluera au fil du projet. N'hésitez pas à partager vos retours.</p>",
+      "content_en": "<p>TerraBloom's website is now live. It will serve as the central hub for tracking project progress, discovering the game, and accessing development resources.</p><p><strong>What you'll find here:</strong></p><ul><li>Detailed gameplay information and game vision</li><li>Regular development updates via DevLog</li><li>Visual gallery of biomes and mechanics</li><li>Technical documentation for the community</li></ul><p>The site will evolve alongside the project. Feel free to share your feedback.</p>",
       "category": "announcement",
       "is_persistent": 1
     },
