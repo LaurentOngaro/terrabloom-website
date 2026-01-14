@@ -140,6 +140,10 @@ const Components = {
         <div class="site-disclaimer-box">
           <strong>⚠️ Pré‑alpha</strong> — Jeu en développement actif. Contenu et spécifications susceptibles d'évoluer.
         </div>
+        <div class="archive-box">
+          <strong>📚 Ancien site — GameaMea</strong>
+          Devlogs, tutoriels et projets open‑source archivés. Consultez la capture Wayback ou visitez l'archive : <a href="/gameamea.com/" target="_blank" rel="noopener">gameamea.com (archive)</a>
+        </div>
         <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Développeur solo (30+ ans d'expérience)</p>
       </div>
     </footer>
@@ -180,6 +184,10 @@ const Components = {
         </button>
         <div class="site-disclaimer-box">
           <strong>⚠️ Early‑stage</strong> — Game in active development. Content and specifications subject to change.
+        </div>
+        <div class="archive-box">
+          <strong>📚 Legacy site — GameaMea</strong>
+          Devlogs, tutorials and open‑source projects have been archived. View the Wayback snapshot or visit the archive: <a href="/gameamea.com/" target="_blank" rel="noopener">gameamea.com (archive)</a>
         </div>
         <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Solo developer (30+ years of experience)</p>
       </div>
