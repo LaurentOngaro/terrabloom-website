@@ -8,106 +8,69 @@
       name="description"
       content="GameaMea devient la vitrine et l'accueil officiel du projet TerraBloom — gameplay, devlog, ressources et téléchargement. Redirection vers playterrabloom.com."
     />
-    <style>
-      :root {
-        --bg: #0b0b0b;
-        --fg: #e9f0e6;
-        --accent: #6bbf6b;
-        --muted: #9aa19a;
-      }
-      body {
-        background: linear-gradient(180deg, #071218 0%, #071b10 100%);
-        color: var(--fg);
-        font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      .card {
-        background: rgba(4, 7, 5, 0.6);
-        border: 1px solid rgba(255, 255, 255, 0.04);
-        padding: 36px;
-        max-width: 820px;
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-      }
-      h1 {
-        margin: 0 0 6px 0;
-        font-weight: 700;
-        font-size: 1.6rem;
-      }
-      p.lead {
-        color: var(--muted);
-        margin: 6px 0 18px 0;
-      }
-      .btn {
-        display: inline-block;
-        background: var(--accent);
-        color: #07210a;
-        padding: 10px 18px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 700;
-        margin-top: 14px;
-      }
-      .meta {
-        font-size: 0.9rem;
-        color: var(--muted);
-        margin-top: 14px;
-      }
-      a.link {
-        color: var(--fg);
-        text-decoration: underline;
-      }
-      .cols {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px;
-        margin-top: 18px;
-      }
-      .col {
-        background: rgba(255, 255, 255, 0.01);
-        padding: 12px;
-        border-radius: 8px;
-      }
-      footer {
-        margin-top: 18px;
-        color: var(--muted);
-        font-size: 0.85rem;
-      }
-      @media (max-width: 640px) {
-        .cols {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <!-- Fonts: preconnect + stylesheet (improves performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Open Graph / Twitter cards -->
+    <meta property="og:title" content="GameaMea — Site désormais dédié à TerraBloom" />
+    <meta property="og:description" content="GameaMea devient la vitrine et l'accueil officiel du projet TerraBloom — devlogs, ressources et plus." />
+    <!-- OG image: use absolute Wayback image URL to ensure availability when shared -->
+    <meta property="og:image" content="https://playterrabloom.com/gameamea.com/assets/gameamea-banner.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- External stylesheet (shared) -->
+    <link rel="stylesheet" href="assets/gameamea.css" />
+
+    <!-- styles moved to assets/gameamea.css -->
   </head>
   <body>
     <main class="card" role="main">
-      <h1>GameaMea → TerraBloom</h1>
+      <div class="lang-switch"><a href="/gameamea.com/index-en.html" hreflang="en" aria-label="Switch to English">English</a></div>
+      <div style="display: flex; gap: 18px; align-items: center">
+        <img
+          src="https://playterrabloom.com/gameamea.com/assets/gameamea-logo.png"
+          alt="GameaMea logo"
+          width="84"
+          height="84"
+          class="frame"
+          style="width: 84px; height: 84px; object-fit: cover"
+        />
+        <div>
+          <h1 style="margin: 0; padding: 0">GameaMea → TerraBloom</h1>
+          <div style="color: var(--muted); font-size: 0.95rem; margin-top: 4px">
+            Dive into Tech and Game Dev — devlogs, tutorials, open‑source projects
+          </div>
+        </div>
+      </div>
+
       <p class="lead">
-        Le site <strong>GameaMea</strong> est désormais consacré au projet <strong>TerraBloom</strong>. Vous allez être redirigé·e vers la nouvelle
-        vitrine du jeu dans quelques secondes, ou vous pouvez cliquer sur le bouton ci‑dessous pour y aller immédiatement.
+        Le site <strong>GameaMea</strong> est désormais consacré au projet <strong>TerraBloom</strong>. <br />
+        Vous allez être redirigé·e vers le site vitrine du jeu dans quelques secondes, ou vous pouvez cliquer sur le bouton ci‑dessous pour y aller
+        immédiatement.
       </p>
 
-      <a class="btn" href="https://playterrabloom.com/" rel="noopener">Accéder à TerraBloom maintenant</a>
+      <a class="btn" href="https://playterrabloom.com/" rel="noopener noreferrer" aria-label="Accéder à TerraBloom (ouvre la vitrine)"
+        >Accéder à TerraBloom maintenant</a
+      >
 
-      <div class="meta">
-        Si la redirection n'est pas automatique, cliquez sur le bouton ci‑dessus ou utilisez ce lien :
-        <a class="link" href="https://playterrabloom.com/">https://playterrabloom.com/</a>
-      </div>
+      <!--
+        <div class="meta">
+          Si la redirection n'est pas automatique, cliquez sur le bouton ci‑dessus ou utilisez ce lien :
+          <a class="link" href="https://playterrabloom.com/">https://playterrabloom.com/</a>
+        </div>
+      -->
 
       <div class="cols" aria-hidden="false">
         <div class="col">
           <h3>À propos de GameaMea</h3>
           <p>
             GameaMea était un blog axé « Dive into Tech and Game Dev » : articles techniques, devlogs, tutoriels (ex. Odin + Raylib), analyses
-            techniques et projets open‑source par Laurent Ongaro. L'esprit était pragmatique, pédagogique et orienté vers la création de jeux et
-            d'outils autour du développement indé.
+            techniques et projets open‑source proposés et développés par
+            <a class="link" href="/about.html" target="_blank" rel="noopener noreferrer">Laurent Ongaro</a>. L'esprit était pragmatique, pédagogique
+            et orienté vers la création de jeux et d'outils autour du développement indé.
           </p>
         </div>
         <div class="col">
@@ -120,23 +83,70 @@
       </div>
 
       <div style="margin-top: 16px">
-        <h3>Ressources archivées</h3>
+        <h3>Ressources archivées & Liens utiles</h3>
         <p class="meta">
-          Les anciens articles et pages restent accessibles via l'archive Wayback :
+          Les anciens articles et pages restent accessibles via l'Internet Archive (aka Wayback Machine) :
           <a class="link" href="https://web.archive.org/web/20251013185357/https://www.gameamea.com/">Archive de GameaMea (13 Oct 2025)</a>.
         </p>
+
+        <ul style="color: var(--muted); margin-top: 8px">
+          <li>
+            <a class="link" href="https://web.archive.org/web/20251013185357/https://www.gameamea.com/category/dev/"
+              >Archive Dev (articles & tutorials)</a
+            >
+          </li>
+          <li>
+            <a class="link" href="https://web.archive.org/web/20251013185357/https://www.gameamea.com/category/tech/">Archive Tech (analyses)</a>
+          </li>
+          <li><a class="link" href="/contact/">Contact</a></li>
+          <li><a class="link" href="https://gitlab.com/laurentOngaro" target="_blank" rel="noopener noreferrer">GitLab — Projets Open‑Source</a></li>
+          <li><a class="link" href="https://www.patreon.com/LaurentOngaro" target="_blank" rel="noopener noreferrer">Patreon — Support</a></li>
+          <li><a class="link" href="https://laurentongaro.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io — Demos & Assets</a></li>
+          <li>
+            <a class="link" href="https://www.youtube.com/@Laurent_GameDev" target="_blank" rel="noopener noreferrer">YouTube — Vidéos & Talks</a>
+          </li>
+        </ul>
+
+        <div class="thumbnails">
+          <img
+            alt="archive-thumb1"
+            src="https://playterrabloom.com/gameamea.com/assets/gameamea-thumb1.jpg"
+            class="frame"
+            width="360"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            alt="archive-thumb2"
+            src="https://playterrabloom.com/gameamea.com/assets/gameamea-thumb2.jpg"
+            class="frame"
+            width="360"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            alt="archive-thumb3"
+            src="https://playterrabloom.com/gameamea.com/assets/gameamea-banner.png"
+            class="frame"
+            width="480"
+            height="270"
+            loading="lazy"
+          />
+        </div>
       </div>
 
       <footer>
-        <p>Merci pour votre intérêt — à très bientôt sur <a class="link" href="https://playterrabloom.com/">playterrabloom.com</a> !</p>
+        <p>
+          Merci pour votre intérêt et votre fidélité pendant ces 10 dernières années — A très bientôt sur
+          <a class="link" href="https://playterrabloom.com/">playterrabloom.com</a> !
+        </p>
+        <p style="margin-top: 8px; color: var(--muted); font-size: 0.85rem">
+          Site original:
+          <a class="link" href="https://web.archive.org/web/20251013185357/https://www.gameamea.com/">gameamea.com (Internet Archive)</a>
+        </p>
       </footer>
     </main>
 
-    <script>
-      // No automatic redirection for now
-      // setTimeout(function () {
-      //   window.location.replace('https://playterrabloom.com/');
-      // }, 30000);
-    </script>
+    <script src="assets/gameamea.js"></script>
   </body>
 </html>
