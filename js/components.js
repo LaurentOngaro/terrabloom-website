@@ -31,7 +31,7 @@ const Components = {
     <header>
       <div class="header-container">
         <a href="${p.index}" class="logo">
-          <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767861595/waacmqjtnyehenq3coi1.png" alt="TerraBloom" width="120" height="auto" />
+          <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767861595/waacmqjtnyehenq3coi1.png" alt="TerraBloom" width="120" height="40" loading="eager" />
         </a>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
@@ -57,7 +57,7 @@ const Components = {
     <header>
       <div class="header-container">
         <a href="${p.index}" class="logo">
-          <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767861595/waacmqjtnyehenq3coi1.png" alt="TerraBloom" width="120" height="auto" />
+          <img src="https://res.cloudinary.com/dhcyqj41d/image/upload/v1767861595/waacmqjtnyehenq3coi1.png" alt="TerraBloom" width="120" height="40" loading="eager" />
         </a>
         <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav>
@@ -140,11 +140,11 @@ const Components = {
         <div class="site-disclaimer-box">
           <strong>⚠️ Pré‑alpha</strong> — Jeu en développement actif. Contenu et spécifications susceptibles d'évoluer.
         </div>
-        <div class="archive-box">
-          <strong>📚 Ancien site — GameaMea</strong>
-          Devlogs, tutoriels et projets open‑source archivés. Consultez la capture Wayback ou visitez l'archive : <a href="/gameamea.com/" target="_blank" rel="noopener">gameamea.com (archive)</a>
-        </div>
         <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Développeur solo (30+ ans d'expérience)</p>
+        <div class="archive-box">
+          <strong> => Ancien site — GameaMea.com</strong>
+          Devlogs, tutoriels et projets open‑source archivés, Consultez le post sur dédié sur son archivage : <a href="/gameamea.com/" target="_blank" rel="noopener">Qu'est il advenu du site gameamea.com ?</a>
+        </div>
       </div>
     </footer>
   `,
@@ -185,11 +185,11 @@ const Components = {
         <div class="site-disclaimer-box">
           <strong>⚠️ Early‑stage</strong> — Game in active development. Content and specifications subject to change.
         </div>
-        <div class="archive-box">
-          <strong>📚 Legacy site — GameaMea</strong>
-          Devlogs, tutorials and open‑source projects have been archived. View the Wayback snapshot or visit the archive: <a href="/gameamea.com/" target="_blank" rel="noopener">gameamea.com (archive)</a>
-        </div>
         <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Solo developer (30+ years of experience)</p>
+        <div class="archive-box">
+          <strong> => Legacy site — GameaMea.com</strong>
+          Devlogs, tutorials and open‑source projects have been archived. Check out the dedicated post on its archiving : <a href="/gameamea.com/" target="_blank" rel="noopener">What happened to the gameamea.com website? ?</a>
+        </div>
       </div>
     </footer>
   `,

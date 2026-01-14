@@ -1133,15 +1133,16 @@ footer {
 
 /* Archive box (subtle, soft variant of site-disclaimer-box) */
 .archive-box {
-  background: rgba(46, 139, 87, 0.08); /* soft green tint */
+  background: rgba(24, 121, 66, 0.08); /* soft green tint */
   color: var(--color-text-primary);
   padding: 0.85rem 1.25rem;
   border-radius: calc(var(--radius) - 2px);
   margin-bottom: 1rem;
-  text-align: left;
+  text-align: center;
   font-size: 0.92rem;
   border-left: 4px solid rgba(46, 139, 87, 0.25);
   box-shadow: var(--shadow-sm);
+
 }
 
 .archive-box strong {
