@@ -142,8 +142,8 @@ const Components = {
         </div>
         <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Développeur solo (30+ ans d'expérience)</p>
         <div class="archive-box">
-          <strong> => Ancien site — GameaMea.com</strong>
-          Devlogs, tutoriels et projets open‑source archivés, Consultez le post sur dédié sur son archivage : <a href="/gameamea.com/" target="_blank" rel="noopener">Qu'est il advenu du site gameamea.com ?</a>
+          <strong>=> Avant TerraBloom : GameaMea.com</strong>
+          Un site dédié aux devlogs, tutoriels et projets open-source.<a href="/gameamea.com" target="_blank" rel="noopener"> → Consulter l'archive</a>
         </div>
       </div>
     </footer>
@@ -187,8 +187,8 @@ const Components = {
         </div>
         <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Solo developer (30+ years of experience)</p>
         <div class="archive-box">
-          <strong> => Legacy site — GameaMea.com</strong>
-          Devlogs, tutorials and open‑source projects have been archived. Check out the dedicated post on its archiving : <a href="/gameamea.com/" target="_blank" rel="noopener">What happened to the gameamea.com website? ?</a>
+          <strong>=> Before TerraBloom: GameaMea.com</strong>
+          A site dedicated to devlogs, tutorials, and open-source projects.<a href="/gameamea.com" target="_blank" rel="noopener"> → View the archive</a>
         </div>
       </div>
     </footer>

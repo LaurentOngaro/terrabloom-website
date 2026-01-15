@@ -29,6 +29,10 @@ Site officiel du jeu indie TerraBloom - Build. Defend. Restore.
 │   └── */min.js            \#idem mais en version minifiée
 ├── data/
 │   └── devlog.json         \# Posts du DevLog
+├── gameamea.com/           \# Archive & redirect (FR/EN) + assets (css/js/images)
+│   ├── index.html
+│   ├── index-en.html
+│   └── assets/
 └── README.md               \# Documentation
 
 ```
@@ -72,7 +76,7 @@ Accent:    #FFD700 (Sunrise Gold)
 
 ## 📸 Images
 
-Toutes les images sont hébergées sur **Cloudinary CDN** avec optimisations automatiques :
+Toutes les images (sauf les archives) sont hébergées sur **Cloudinary CDN** avec optimisations automatiques :
 
 - `q_auto` : Qualité adaptative
 - `f_auto` : Format automatique (WebP si supporté)
@@ -97,32 +101,6 @@ npm run minify        # Minifie CSS + JS
 npm run watch:css     # Watch mode pour CSS
 npm run watch:js      # Watch mode pour JS
 ```
-
-### Script PowerShell (Asset Mode Switcher)
-
-Fichier: `../_Helpers/03_Maintenance/switchAssetMode.ps1`
-
-```powershell
-# Basculer en mode production (minifié)
-pwsh -File ../_Helpers/03_Maintenance/switchAssetMode.ps1 -Mode production
-
-# Revenir en mode développement (source)
-pwsh -File ../_Helpers/03_Maintenance/switchAssetMode.ps1 -Mode dev
-```
-
-**Fonctionnement:**
-
-- Auto-découvre tous les fichiers HTML du dossier `website/`
-- Remplace les liens vers `style.css` / `*.js` par `style.min.css` / `*.min.js` (production)
-- Restaure les liens originaux en mode dev
-
-### VS Code Tasks
-
-Trois tasks disponibles dans `.vscode/tasks.json` :
-
-1. **Switch to Production Mode** → Bascule vers assets minifiés
-2. **Switch to Dev Mode** → Restaure assets source
-3. **Minify All Assets** → Lance `npm run minify`
 
 ## 📞 Support
 
@@ -166,24 +144,4 @@ Questions? Contact Laurent:
 ✅ **Minimal JavaScript** — Only essential interactivity
 ✅ **Mobile-First CSS** — Efficient responsive design
 
-### Known Opportunities (Low Priority)
-
-From PageSpeed Insights report:
-
-- 🟡 **Render-blocking resources** — Estimated savings 490ms (not critical at 0.7s load)
-- 🟡 **Image delivery** — Estimated savings 145 KiB (already using Cloudinary auto-optimization)
-- ⚠️ **CLS** — Layout shift 0.198 (could add explicit width/height to images)
-- 🟡 **Unused JavaScript** — 55 KiB (components.js includes optional features)
-
-### Recommendations
-
-**Current Status**: ✅ **Production-ready** (Score 90 is excellent)
-
-**Optional Improvements** (if targeting 95+):
-
-1. Add explicit `width`/`height` to all `<img>` tags (reduces CLS)
-2. Inline critical CSS (first-paint optimization)
-3. Defer non-critical JavaScript (Google Analytics, etc.)
-4. Consider lazy-loading images below the fold
-
-**Decision**: Current performance is excellent for an indie game marketing site. Focus on content and game development rather than micro-optimizations.
+**Current Status**: ✅ **Production-ready**

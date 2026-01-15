@@ -177,6 +177,12 @@ footer {
   }
 }
 
+.logo-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-left: 6px;
+}
+
 /* Fade helpers */
 .card.fade-init {
   opacity: 0;
