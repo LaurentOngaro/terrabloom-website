@@ -3,21 +3,25 @@
 
 User-agent: *
 Allow: /
-Allow: /index.html
-Allow: /index-en.html
-Allow: /about.html
-Allow: /about-en.html
-Allow: /blog.html
-Allow: /blog-en.html
-Allow: /contact.html
-Allow: /contact-en.html
 Allow: /css/
 Allow: /js/
-Allow: /images/
+Allow: /gameamea.com/
+Allow: /about-en.html
+Allow: /about.html
+Allow: /blog-en.html
+Allow: /blog.html
+Allow: /contact-en.html
+Allow: /contact.html
+Allow: /game-en.html
+Allow: /game.html
+Allow: /index-en.html
+Allow: /index.html
+Allow: /privacy-en.html
+Allow: /privacy.html
 
-Disallow: /_tools/
-Disallow: /_helpers/
+Disallow: /_Docs/
 Disallow: /.git/
+Disallow: /node_modules/
 
 # Sitemap location
 Sitemap: https://playterrabloom.com/sitemap.xml

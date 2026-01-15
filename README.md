@@ -7,33 +7,34 @@ Site officiel du jeu indie TerraBloom - Build. Defend. Restore.
 ```
 
 /
-├── index.html              \# Accueil (FR)
-├── index-en.html           \# Accueil (EN)
-├── game.html               # Le jeu - Gameplay détaillé (FR)
-├── game-en.html            # Le jeu - Gameplay détaillé (EN)
-├── about.html              # À propos du dev - Crédibilité (FR)
-├── about-en.html           # À propos du dev - Crédibilité (EN)
-├── blog.html               \# DevLog (FR)
-├── blog-en.html            \# DevLog (EN)
-├── contact.html            \# Contact (FR)
-├── contact-en.html         \# Contact (EN)
-├── privacy.html            # Politique de confidentialité (FR)
-├── privacy-en.html         # Politique de confidentialité (EN)
+├── _Docs/                  # Documentation du projet liés au site
 ├── css/
-│   ├── style.css           \# Styles (Dark/Light theme)
-│   └── style.min.css       \#idem mais en version minifiée
-├── js/
-│   ├── main.js             \# Navigation + Theme + Language
-│   ├── components.js       \# Element communs injectés dans les pages
-│   ├── blog-loader.js      \# Charge les posts depuis devlog.json
-│   └── */min.js            \#idem mais en version minifiée
+│   ├── style.css           # Styles (Dark/Light theme)
+│   └── style.min.css       #idem mais en version minifiée
 ├── data/
-│   └── devlog.json         \# Posts du DevLog
-├── gameamea.com/           \# Archive & redirect (FR/EN) + assets (css/js/images)
+│   └── devlog.json         # Posts du DevLog
+├── gameamea.com/           # Archive & redirect (FR/EN) + assets (css/js/images)
 │   ├── index.html
 │   ├── index-en.html
 │   └── assets/
-└── README.md               \# Documentation
+├── js/
+│   ├── main.js             # Navigation + Theme + Language
+│   ├── components.js       # Element communs injectés dans les pages
+│   ├── blog-loader.js      # Charge les posts depuis devlog.json
+│   └── */min.js            #idem mais en version minifiée
+├── about-en.html           # À propos du dev - Crédibilité (EN)
+├── about.html              # À propos du dev - Crédibilité (FR)
+├── blog-en.html            # DevLog (EN)
+├── blog.html               # DevLog (FR)
+├── contact-en.html         # Contact (EN)
+├── contact.html            # Contact (FR)
+├── game-en.html            # Le jeu - Gameplay détaillé (EN)
+├── game.html               # Le jeu - Gameplay détaillé (FR)
+├── index-en.html           # Accueil (EN)
+├── index.html              # Accueil (FR)
+├── privacy-en.html         # Politique de confidentialité (EN)
+├── privacy.html            # Politique de confidentialité (FR)
+└── README.md               # Documentation
 
 ```
 

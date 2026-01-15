@@ -12,6 +12,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <description lang="fr">TerraBloom — jeu indépendant pour construire, défendre et restaurer des biomes. Actualités, mises à jour et blog de développement.</description>
+    <description lang="en">TerraBloom — an indie game to build, defend and restore biomes. Development news, updates and blog.</description>
     <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/index-en.html" />
   </url>
 
@@ -20,6 +22,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <description lang="fr">En savoir plus sur TerraBloom : concept, univers, et l'équipe de développement.</description>
+    <description lang="en">Learn about TerraBloom: concept, universe, and the development team.</description>
     <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/about-en.html" />
   </url>
 
@@ -28,6 +32,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <description lang="fr">Le journal de développement : articles, notes et récits de l'avancement du projet TerraBloom.</description>
+    <description lang="en">The development journal: articles, notes and stories about TerraBloom project progress.</description>
     <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/blog-en.html" />
   </url>
 
@@ -36,6 +42,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <description lang="fr">Contactez l'équipe TerraBloom pour questions, presse ou partenariats.</description>
+    <description lang="en">Contact the TerraBloom team for inquiries, press or partnerships.</description>
     <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/contact-en.html" />
   </url>
 
@@ -45,6 +53,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <description lang="en">TerraBloom — an indie game to build, defend and restore biomes. Development news, updates and blog.</description>
+    <description lang="fr">TerraBloom — jeu indépendant pour construire, défendre et restaurer des biomes. Actualités et blog de développement.</description>
     <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/" />
   </url>
 
@@ -53,6 +63,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <description lang="en">Learn about TerraBloom: concept, universe, and the development team.</description>
+    <description lang="fr">En savoir plus sur TerraBloom : concept, univers, et l'équipe de développement.</description>
     <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/about.html" />
   </url>
 
@@ -61,6 +73,8 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <description lang="en">The development journal: articles, notes and stories about TerraBloom project progress.</description>
+    <description lang="fr">Le journal de développement : articles, notes et récits de l'avancement du projet TerraBloom.</description>
     <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/blog.html" />
   </url>
 
@@ -69,7 +83,72 @@
     <lastmod>2026-01-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <description lang="en">Contact the TerraBloom team for inquiries, press or partnerships.</description>
+    <description lang="fr">Contactez l'équipe TerraBloom pour questions, presse ou partenariats.</description>
     <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/contact.html" />
+  </url>
+
+  <!-- Game Pages -->
+  <url>
+    <loc>https://playterrabloom.com/game.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <description lang="fr">Découvrir TerraBloom : mécaniques, captures d'écran et caractéristiques de jeu.</description>
+    <description lang="en">Discover TerraBloom: mechanics, screenshots and game features.</description>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/game-en.html" />
+  </url>
+
+  <url>
+    <loc>https://playterrabloom.com/game-en.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <description lang="en">Discover TerraBloom: mechanics, screenshots and game features.</description>
+    <description lang="fr">Découvrir TerraBloom : mécaniques, captures d'écran et caractéristiques de jeu.</description>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/game.html" />
+  </url>
+
+  <!-- Privacy pages -->
+  <url>
+    <loc>https://playterrabloom.com/privacy.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <description lang="fr">Politique de confidentialité et gestion des données pour les visiteurs du site TerraBloom.</description>
+    <description lang="en">Privacy policy and data handling for TerraBloom visitors.</description>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/privacy-en.html" />
+  </url>
+
+  <url>
+    <loc>https://playterrabloom.com/privacy-en.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <description lang="en">Privacy policy and data handling for TerraBloom visitors.</description>
+    <description lang="fr">Politique de confidentialité et gestion des données pour les visiteurs du site TerraBloom.</description>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/privacy.html" />
+  </url>
+
+  <!-- GameAmea subsite -->
+  <url>
+    <loc>https://playterrabloom.com/gameamea.com/index.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <description lang="fr">Page dédiée au projet partenaire GameAmea — démos et ressources.</description>
+    <description lang="en">Page for the GameAmea partner project — demos and resources.</description>
+    <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/gameamea.com/index-en.html" />
+  </url>
+
+  <url>
+    <loc>https://playterrabloom.com/gameamea.com/index-en.html</loc>
+    <lastmod>2026-01-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <description lang="en">Page for the GameAmea partner project — demos and resources.</description>
+    <description lang="fr">Page dédiée au projet partenaire GameAmea — démos et ressources.</description>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/gameamea.com/index.html" />
   </url>
 
 </urlset>
