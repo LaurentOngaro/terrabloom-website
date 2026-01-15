@@ -9,7 +9,7 @@
   <!-- French Pages -->
   <url>
     <loc>https://playterrabloom.com/</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <description lang="fr">TerraBloom — jeu indépendant pour construire, défendre et restaurer des biomes. Actualités, mises à jour et blog de développement.</description>
@@ -19,7 +19,7 @@
 
   <url>
     <loc>https://playterrabloom.com/about.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <description lang="fr">En savoir plus sur TerraBloom : concept, univers, et l'équipe de développement.</description>
@@ -29,7 +29,7 @@
 
   <url>
     <loc>https://playterrabloom.com/blog.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <description lang="fr">Le journal de développement : articles, notes et récits de l'avancement du projet TerraBloom.</description>
@@ -39,7 +39,7 @@
 
   <url>
     <loc>https://playterrabloom.com/contact.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <description lang="fr">Contactez l'équipe TerraBloom pour questions, presse ou partenariats.</description>
@@ -50,7 +50,7 @@
   <!-- English Pages -->
   <url>
     <loc>https://playterrabloom.com/index-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <description lang="en">TerraBloom — an indie game to build, defend and restore biomes. Development news, updates and blog.</description>
@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://playterrabloom.com/about-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <description lang="en">Learn about TerraBloom: concept, universe, and the development team.</description>
@@ -70,7 +70,7 @@
 
   <url>
     <loc>https://playterrabloom.com/blog-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <description lang="en">The development journal: articles, notes and stories about TerraBloom project progress.</description>
@@ -80,7 +80,7 @@
 
   <url>
     <loc>https://playterrabloom.com/contact-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <description lang="en">Contact the TerraBloom team for inquiries, press or partnerships.</description>
@@ -91,7 +91,7 @@
   <!-- Game Pages -->
   <url>
     <loc>https://playterrabloom.com/game.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <description lang="fr">Découvrir TerraBloom : mécaniques, captures d'écran et caractéristiques de jeu.</description>
@@ -101,7 +101,7 @@
 
   <url>
     <loc>https://playterrabloom.com/game-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <description lang="en">Discover TerraBloom: mechanics, screenshots and game features.</description>
@@ -112,7 +112,7 @@
   <!-- Privacy pages -->
   <url>
     <loc>https://playterrabloom.com/privacy.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <description lang="fr">Politique de confidentialité et gestion des données pour les visiteurs du site TerraBloom.</description>
@@ -122,7 +122,7 @@
 
   <url>
     <loc>https://playterrabloom.com/privacy-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
     <description lang="en">Privacy policy and data handling for TerraBloom visitors.</description>
@@ -133,7 +133,7 @@
   <!-- GameAmea subsite -->
   <url>
     <loc>https://playterrabloom.com/gameamea.com/index.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <description lang="fr">Page dédiée au projet partenaire GameAmea — démos et ressources.</description>
@@ -143,7 +143,7 @@
 
   <url>
     <loc>https://playterrabloom.com/gameamea.com/index-en.html</loc>
-    <lastmod>2026-01-06</lastmod>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <description lang="en">Page for the GameAmea partner project — demos and resources.</description>
