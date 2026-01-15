@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": "005",
+      "date": "2026-01-15",
+      "title_fr": "GameaMea : archive et redirection",
+      "title_en": "GameaMea Archive & Redirect",
+      "excerpt_fr": "Une page dédiée à l'ancien Site Gameamea Studio a été créée.",
+      "excerpt_en": "A dedicated page for the former Gameamea Studio site has been created.",
+      "content_fr": "<p>Bonne nouvelle — une page dédiée à l'ancien site <strong>Gameamea Studio</strong> a été créée sur TerraBloom.</p> <section> <h3>Ressources accessibles :</h3> <ul> <li><a href=\"/gameamea.com\">gameamea.com</a> — page de redirection et archive locale.</li> <li>Quelques images locales : <ul> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-logo.png\">gameamea-logo.png</a></li> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-banner.png\">gameamea-banner.png</a></li> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-thumb1.jpg\">gameamea-thumb1.jpg</a></li> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-thumb2.jpg\">gameamea-thumb2.jpg</a></li> </ul> </li> </ul> </section> <h3>Pourquoi cela peut vous intéresser :</h3> <p> Cette archive a pour but de rassembler d'anciens contenus, tutoriels, guides et ressources visuelles — utile pour retrouver des assets, consulter l'historique éditorial ou créditer les auteurs.</p> <h3>Si vous êtes nostalgique de l'ancien site :</h3> <p> Visitez <a href=\"/gameamea.com\">la page dédiée à gameamea.com</a> et ses liens sur l'Internet Archive (Wayback Machine).<br> Indiquez-nous les articles que vous souhaiteriez retrouver ou dites-nous si vous souhaitez que nous hébergions davantage de contenus localement ou que nous développions une page « Histoire/Archive » plus complète.<br> Nous nous occupons du reste.</p> <p><a class=\"btn btn-primary\" href=\"/contact.html\" role=\"button\" aria-label=\"Proposez un article à réintégrer\">Proposez un article à réintégrer</a></p>",
+      "content_en": "<p>Good news — a dedicated page for the former <strong>Gameamea Studio</strong> site has been created on TerraBloom.</p> <section> <h3>Available resources :</h3> <ul> <li><a href=\"/gameamea.com\">gameamea.com</a> — redirect page and local archive.</li> <li>Some local images : <ul> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-logo.png\">gameamea-logo.png</a></li> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-banner.png\">gameamea-banner.png</a></li> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-thumb1.jpg\">gameamea-thumb1.jpg</a></li> <li><a href=\"https://playterrabloom.com/gameamea.com/assets/gameamea-thumb2.jpg\">gameamea-thumb2.jpg</a></li> </ul> </li> </ul> </section> <h3>Why this may interest you :</h3> <p> The archive gathers past posts (devlogs), tutorials and visual assets — useful to find old guides, reuse assets, check editorial history and credits.</p> <h3>If you miss the old site :</h3> <p> Visit <a href=\"/gameamea.com\">the dedicated page for gameamea.com</a> and its links on the Internet Archive (Wayback Machine).<br> Tell us which posts you'd like retrieved or whether you'd like us to host more content locally or build a full « History/Archive » page.<br> We’ll take care of it.</p> <p><a class=\"btn btn-primary\" href=\"/contact-en.html\" role=\"button\" aria-label=\"Suggest an item to restore\">Suggest an item to restore</a></p>",
+      "category": "announcement",
+      "is_persistent": 1
+    },
+    {
       "id": "004",
       "date": "2026-01-06",
       "title_fr": "Optimisation du site et préparation au lancement",
@@ -13,15 +25,15 @@
       "is_persistent": 1
     },
     {
-      "id": "001",
-      "date": "2026-01-04",
-      "title_fr": "Mise en ligne du site",
-      "title_en": "Website Launch",
-      "excerpt_fr": "Le site officiel de TerraBloom est maintenant accessible. Vous y trouverez toutes les informations sur le projet et son avancement.",
-      "excerpt_en": "TerraBloom's official website is now live. You'll find all project information and development updates here.",
-      "content_fr": "<p>Le site de TerraBloom est maintenant en ligne. Il servira de point central pour suivre l'avancement du projet, découvrir le jeu et accéder aux ressources de développement.</p><p><strong>Ce que vous y trouverez :</strong></p><ul><li>Informations détaillées sur le gameplay et la vision du jeu</li><li>Suivi régulier du développement via le DevLog</li><li>Galerie visuelle des biomes et mécaniques</li><li>Documentation technique pour la communauté</li></ul><p>Le site évoluera au fil du projet. N'hésitez pas à partager vos retours.</p>",
-      "content_en": "<p>TerraBloom's website is now live. It will serve as the central hub for tracking project progress, discovering the game, and accessing development resources.</p><p><strong>What you'll find here:</strong></p><ul><li>Detailed gameplay information and game vision</li><li>Regular development updates via DevLog</li><li>Visual gallery of biomes and mechanics</li><li>Technical documentation for the community</li></ul><p>The site will evolve alongside the project. Feel free to share your feedback.</p>",
-      "category": "announcement",
+      "id": "003",
+      "date": "2025-11-20",
+      "title_fr": "Phase de conception - Choix de l'architecture",
+      "title_en": "Design Phase - Architecture Choices",
+      "excerpt_fr": "Recherche et analyse des solutions techniques pour le système de terrain : Unity Terrain vs architecture chunk-based.",
+      "excerpt_en": "Research and analysis of terrain system technical solutions: Unity Terrain vs chunk-based architecture.",
+      "content_fr": "<p>Novembre 2025 a été consacré à la phase de conception préliminaire du projet. La question centrale : quelle architecture technique pour un monde procédural vaste et performant ?</p><p><strong>Les contraintes identifiées :</strong></p><ul><li>Générer des mondes de plusieurs km² sans limites artificielles</li><li>Gérer 4 biomes distincts avec mécaniques spécifiques</li><li>Assurer des performances fluides sur configurations moyennes </li><li>Permettre une sauvegarde progressive du monde</li></ul><p><strong>Unity Terrain vs Chunks :</strong></p><p>Après analyse, le système Terrain standard de Unity s'est révélé limitant pour la génération procédurale et la gestion des biomes distincts. L'architecture chunk-based (inspirée de Minecraft) offre plus de flexibilité : chaque section peut être générée, chargée et sauvegardée indépendamment.</p><p><strong>Décision :</strong></p><p>Architecture chunk-based retenue. Les chunks permettront de contrôler précisément la génération par biome, d'optimiser le chargement/déchargement dynamique et de gérer le LOD (Level of Detail) efficacement. Le défi sera la gestion des transitions entre chunks pour éviter les coupures visuelles.</p>",
+      "content_en": "<p>November 2025 was dedicated to the project's preliminary design phase. The central question: what technical architecture for a vast, performant procedural world?</p><p><strong>Identified constraints:</strong></p><ul><li>Generate worlds of several km² without artificial limits</li><li>Manage 4 distinct biomes with specific mechanics</li><li>Ensure fluid performance on mid-range hardware</li><li>Enable progressive world saving</li></ul><p><strong>Unity Terrain vs Chunks:</strong></p><p>After analysis, Unity's standard Terrain system proved limiting for procedural generation and distinct biome management. Chunk-based architecture (inspired by Minecraft) offers more flexibility: each section can be generated, loaded, and saved independently.</p><p><strong>Decision:</strong></p><p>Chunk-based architecture selected. Chunks will allow precise control over biome-specific generation, optimize dynamic loading/unloading, and efficiently manage LOD (Level of Detail). The challenge will be managing chunk transitions to avoid visual breaks.</p>",
+      "category": "development",
       "is_persistent": 1
     },
     {
@@ -37,15 +49,15 @@
       "is_persistent": 1
     },
     {
-      "id": "003",
-      "date": "2025-11-20",
-      "title_fr": "Phase de conception - Choix de l'architecture",
-      "title_en": "Design Phase - Architecture Choices",
-      "excerpt_fr": "Recherche et analyse des solutions techniques pour le système de terrain : Unity Terrain vs architecture chunk-based.",
-      "excerpt_en": "Research and analysis of terrain system technical solutions: Unity Terrain vs chunk-based architecture.",
-      "content_fr": "<p>Novembre 2025 a été consacré à la phase de conception préliminaire du projet. La question centrale : quelle architecture technique pour un monde procédural vaste et performant ?</p><p><strong>Les contraintes identifiées :</strong></p><ul><li>Générer des mondes de plusieurs km² sans limites artificielles</li><li>Gérer 4 biomes distincts avec mécaniques spécifiques</li><li>Assurer des performances fluides sur configurations moyennes </li><li>Permettre une sauvegarde progressive du monde</li></ul><p><strong>Unity Terrain vs Chunks :</strong></p><p>Après analyse, le système Terrain standard de Unity s'est révélé limitant pour la génération procédurale et la gestion des biomes distincts. L'architecture chunk-based (inspirée de Minecraft) offre plus de flexibilité : chaque section peut être générée, chargée et sauvegardée indépendamment.</p><p><strong>Décision :</strong></p><p>Architecture chunk-based retenue. Les chunks permettront de contrôler précisément la génération par biome, d'optimiser le chargement/déchargement dynamique et de gérer le LOD (Level of Detail) efficacement. Le défi sera la gestion des transitions entre chunks pour éviter les coupures visuelles.</p>",
-      "content_en": "<p>November 2025 was dedicated to the project's preliminary design phase. The central question: what technical architecture for a vast, performant procedural world?</p><p><strong>Identified constraints:</strong></p><ul><li>Generate worlds of several km² without artificial limits</li><li>Manage 4 distinct biomes with specific mechanics</li><li>Ensure fluid performance on mid-range hardware</li><li>Enable progressive world saving</li></ul><p><strong>Unity Terrain vs Chunks:</strong></p><p>After analysis, Unity's standard Terrain system proved limiting for procedural generation and distinct biome management. Chunk-based architecture (inspired by Minecraft) offers more flexibility: each section can be generated, loaded, and saved independently.</p><p><strong>Decision:</strong></p><p>Chunk-based architecture selected. Chunks will allow precise control over biome-specific generation, optimize dynamic loading/unloading, and efficiently manage LOD (Level of Detail). The challenge will be managing chunk transitions to avoid visual breaks.</p>",
-      "category": "development",
+      "id": "001",
+      "date": "2026-01-04",
+      "title_fr": "Mise en ligne du site",
+      "title_en": "Website Launch",
+      "excerpt_fr": "Le site officiel de TerraBloom est maintenant accessible. Vous y trouverez toutes les informations sur le projet et son avancement.",
+      "excerpt_en": "TerraBloom's official website is now live. You'll find all project information and development updates here.",
+      "content_fr": "<p>Le site de TerraBloom est maintenant en ligne. Il servira de point central pour suivre l'avancement du projet, découvrir le jeu et accéder aux ressources de développement.</p><p><strong>Ce que vous y trouverez :</strong></p><ul><li>Informations détaillées sur le gameplay et la vision du jeu</li><li>Suivi régulier du développement via le DevLog</li><li>Galerie visuelle des biomes et mécaniques</li><li>Documentation technique pour la communauté</li></ul><p>Le site évoluera au fil du projet. N'hésitez pas à partager vos retours.</p>",
+      "content_en": "<p>TerraBloom's website is now live. It will serve as the central hub for tracking project progress, discovering the game, and accessing development resources.</p><p><strong>What you'll find here:</strong></p><ul><li>Detailed gameplay information and game vision</li><li>Regular development updates via DevLog</li><li>Visual gallery of biomes and mechanics</li><li>Technical documentation for the community</li></ul><p>The site will evolve alongside the project. Feel free to share your feedback.</p>",
+      "category": "announcement",
       "is_persistent": 1
     }
   ]
