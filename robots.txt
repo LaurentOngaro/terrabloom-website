@@ -25,7 +25,3 @@ Disallow: /node_modules/
 
 # Sitemap location
 Sitemap: https://playterrabloom.com/sitemap.xml
-
-# Crawl delay (in seconds) - be respectful
-Crawl-delay: 1
-Request-rate: 1/1s
