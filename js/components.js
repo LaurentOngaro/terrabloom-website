@@ -135,7 +135,7 @@ const Components = {
       </div>
       <div class="footer-bottom">
         <button id="back-to-top" class="back-to-top" aria-label="Retour en haut" title="Retour en haut">
-          ↑ Haut de page
+          ↑ Top
         </button>
         <div class="site-disclaimer-box">
           <strong>⚠️ Pré‑alpha</strong> — Jeu en développement actif. Contenu et spécifications susceptibles d'évoluer.
