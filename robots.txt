@@ -5,19 +5,19 @@ User-agent: *
 Allow: /
 Allow: /css/
 Allow: /js/
-Allow: /gameamea.com/
-Allow: /about-en.html
-Allow: /about.html
-Allow: /blog-en.html
-Allow: /blog.html
-Allow: /contact-en.html
-Allow: /contact.html
-Allow: /game-en.html
-Allow: /game.html
-Allow: /index-en.html
-Allow: /index.html
-Allow: /privacy-en.html
-Allow: /privacy.html
+# Allow: /gameamea.com/
+# Allow: /about-en.html
+# Allow: /about.html
+# Allow: /blog-en.html
+# Allow: /blog.html
+# Allow: /contact-en.html
+# Allow: /contact.html
+# Allow: /game-en.html
+# Allow: /game.html
+# Allow: /index-en.html
+# Allow: /index.html
+# Allow: /privacy-en.html
+# Allow: /privacy.html
 
 Disallow: /_Docs/
 Disallow: /.git/
