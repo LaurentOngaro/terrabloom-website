@@ -12,8 +12,8 @@
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <!-- <description lang="fr">TerraBloom — jeu indépendant pour construire, défendre et restaurer des biomes. Actualités, mises à jour et blog de développement.</description> -->
-    <!-- <description lang="en">TerraBloom — an indie game to build, defend and restore biomes. Development news, updates and blog.</description> -->
+    <!-- <description lang="fr">TerraBloom - jeu indépendant pour construire, défendre et restaurer des biomes. Actualités, mises à jour et blog de développement.</description> -->
+    <!-- <description lang="en">TerraBloom - an indie game to build, defend and restore biomes. Development news, updates and blog.</description> -->
     <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/index-en.html" />
   </url>
 
@@ -53,8 +53,8 @@
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <!-- <description lang="en">TerraBloom — an indie game to build, defend and restore biomes. Development news, updates and blog.</description> -->
-    <!-- <description lang="fr">TerraBloom — jeu indépendant pour construire, défendre et restaurer des biomes. Actualités et blog de développement.</description> -->
+    <!-- <description lang="en">TerraBloom - an indie game to build, defend and restore biomes. Development news, updates and blog.</description> -->
+    <!-- <description lang="fr">TerraBloom - jeu indépendant pour construire, défendre et restaurer des biomes. Actualités et blog de développement.</description> -->
     <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/" />
   </url>
 
@@ -136,8 +136,8 @@
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <!-- <description lang="fr">Page dédiée au projet partenaire GameAmea — démos et ressources.</description> -->
-    <!-- <description lang="en">Page for the GameAmea partner project — demos and resources.</description> -->
+    <!-- <description lang="fr">Page dédiée au projet partenaire GameAmea - démos et ressources.</description> -->
+    <!-- <description lang="en">Page for the GameAmea partner project - demos and resources.</description> -->
     <xhtml:link rel="alternate" hreflang="en" href="https://playterrabloom.com/gameamea.com/index-en.html" />
   </url>
 
@@ -146,8 +146,8 @@
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <!-- <description lang="en">Page for the GameAmea partner project — demos and resources.</description> -->
-    <!-- <description lang="fr">Page dédiée au projet partenaire GameAmea — démos et ressources.</description> -->
+    <!-- <description lang="en">Page for the GameAmea partner project - demos and resources.</description> -->
+    <!-- <description lang="fr">Page dédiée au projet partenaire GameAmea - démos et ressources.</description> -->
     <xhtml:link rel="alternate" hreflang="fr" href="https://playterrabloom.com/gameamea.com/index.html" />
   </url>
 

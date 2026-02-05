@@ -138,9 +138,9 @@ const Components = {
           ↑ Top
         </button>
         <div class="site-disclaimer-box">
-          <strong>⚠️ Pré‑alpha</strong> — Jeu en développement actif. Contenu et spécifications susceptibles d'évoluer.
+          <strong>⚠️ Pré‑alpha</strong> - Jeu en développement actif. Contenu et spécifications susceptibles d'évoluer.
         </div>
-        <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Développeur solo (30+ ans d'expérience)</p>
+        <p>&copy; 2026 TerraBloom. Tous droits réservés. | Développé par <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> - Développeur solo (30+ ans d'expérience)</p>
         <div class="archive-box">
           <strong>=> Avant TerraBloom : GameaMea.com</strong>
           Un site dédié aux devlogs, tutoriels et projets open-source.<a href="/gameamea.com" target="_blank" rel="noopener"> → Consulter l'archive</a>
@@ -183,9 +183,9 @@ const Components = {
           ↑ Top
         </button>
         <div class="site-disclaimer-box">
-          <strong>⚠️ Early‑stage</strong> — Game in active development. Content and specifications subject to change.
+          <strong>⚠️ Early‑stage</strong> - Game in active development. Content and specifications subject to change.
         </div>
-        <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> — Solo developer (30+ years of experience)</p>
+        <p>&copy; 2026 TerraBloom. All rights reserved. | Developed by <a href="https://github.com/LaurentOngaro">Laurent Ongaro</a> - Solo developer (30+ years of experience)</p>
         <div class="archive-box">
           <strong>=> Before TerraBloom: GameaMea.com</strong>
           A site dedicated to devlogs, tutorials, and open-source projects.<a href="/gameamea.com" target="_blank" rel="noopener"> → View the archive</a>

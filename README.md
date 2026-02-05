@@ -117,7 +117,7 @@ Questions? Contact Laurent:
 
 ### PageSpeed Insights (7 Jan 2026)
 
-**Scores** — [View Full Report](https://pagespeed.web.dev/analysis/https-playterrabloom-com/lhz3vrrs5t?form_factor=desktop)
+**Scores** - [View Full Report](https://pagespeed.web.dev/analysis/https-playterrabloom-com/lhz3vrrs5t?form_factor=desktop)
 
 | Metric             | Score       | Status       |
 | ------------------ | ----------- | ------------ |
@@ -138,11 +138,11 @@ Questions? Contact Laurent:
 
 ### Optimizations Applied
 
-✅ **Minified Assets** — CSS + JS files optimized (terser, lightningcss)
-✅ **Cloudinary CDN** — Images auto-optimized (WebP, quality, sizing)
-✅ **Static HTML** — No server-side rendering delays
-✅ **GitHub Pages CDN** — Global distribution
-✅ **Minimal JavaScript** — Only essential interactivity
-✅ **Mobile-First CSS** — Efficient responsive design
+✅ **Minified Assets** - CSS + JS files optimized (terser, lightningcss)
+✅ **Cloudinary CDN** - Images auto-optimized (WebP, quality, sizing)
+✅ **Static HTML** - No server-side rendering delays
+✅ **GitHub Pages CDN** - Global distribution
+✅ **Minimal JavaScript** - Only essential interactivity
+✅ **Mobile-First CSS** - Efficient responsive design
 
 **Current Status**: ✅ **Production-ready**
